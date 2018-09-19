@@ -65,12 +65,12 @@
 	<script type="text/javascript" src="d3.min.js"></script>
 	<script type="text/javascript">
 		$(function() {
-			var textColor = '#808080';
-			var berlinBlue = '#0066b3';
-			var lightBlue = '#bdcede';
-			var focusColor = '#ff6473';
-			var focusColorLight = '#f5aeb5';
-			var km = [5, 10, 15, 20, 25, 30, 35, 40, 42.195];
+			var textColor = '#808080',
+				berlinBlue = '#0066b3',
+				lightBlue = '#bdcede',
+				focusColor = '#ff6473',
+				focusColorLight = '#f5aeb5',
+				km = [5, 10, 15, 20, 25, 30, 35, 40, 42.195];
 			var margin = {top: 20, left: 100, bottom: 100, right: 200};
 			var width = $('.svg-container').width();
 			width = width > 900 ? 900 : width;
@@ -83,6 +83,8 @@
 				})
 				.x(function(d) { return x(d.km); })
 				.y(function(d) { return y(d.split); });
+
+			// Build the SVG element...
 			var svg = d3.select('.svg-container').append('svg')
 				.attr('width', width + margin.left + margin.right)
 				.attr('height', height + margin.bottom + margin.top)
@@ -92,7 +94,10 @@
 				.attr('fill', textColor)
 			.append('g')
 				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+			// ...and add the data.
 			d3.tsv('berlin_marathon_results_1999_2018.txt', function(data) {
+				// Add the run to the information section above the figure.
 				var run = '<div class="run"><div class="year">' + data.year +
 					'</div><div class="runner">' + data.runner +
 					' <span class="nationality">&ndash; ' + data.nationality + '</span></div>';
@@ -103,6 +108,9 @@
 				}
 				run += '</div>';
 				$('.info').append(run);
+
+				// In order to plot the data, we need to extract and process the variables that we
+				// are interested in (distance and split).
 				var splits = [];
 				var time = [];
 				var plotData = [];

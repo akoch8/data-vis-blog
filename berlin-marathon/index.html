@@ -2,10 +2,250 @@
 <html>
 <head>
 	<title>the Berlin Marathon</title>
+	<style type="text/css">
+		body {
+			color: #2f3030;
+			font: 12px/1.5 Arial, sans-serif;
+			font-weight: 400;
+		}
+		.info {
+			margin-left: 100px;
+		}
+		.run {
+			display: inline-block;
+			margin: 0 0.5em 0.5em 0;
+			max-width: 20rem;
+			padding: 0.5em 1em 0.5em 0.5em;
+		}
+		.run:hover {
+			background: #fcfcfc;
+			cursor: pointer;
+		}
+		.run:hover > .wr {
+			color: #ff6473;
+		}
+		.run:hover > .no-wr {
+			color: #f5aeb5;
+		}
+		.run:active {
+			background: #ececec;
+		}
+		.year {
+			font-size: 12px;
+		}
+		.runner {
+			font-weight: 700;
+		}
+		.nationality {
+			color: #5e5e5e;
+			font-weight: 400;
+		}
+		.wr {
+			color: #0066b3;
+		}
+		.no-wr {
+			color: #bdcede;
+		}
+		.axis line {
+			stroke: #bbb;
+		}
+		.axis path {
+			stroke: #bbb;
+		}
+		.axis text {
+			fill: #5e5e5e;
+			font-size: 11px;
+		}
+	</style>
 </head>
 <body>
-	<h1>the Berlin Marathon</h1>
+	<div class="info"></div>
+	<div class="svg-container"></div>
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="d3.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var textColor = '#808080';
+			var berlinBlue = '#0066b3';
+			var lightBlue = '#bdcede';
+			var focusColor = '#ff6473';
+			var focusColorLight = '#f5aeb5';
+			var km = [5, 10, 15, 20, 25, 30, 35, 40, 42.195];
+			var margin = {top: 20, left: 100, bottom: 100, right: 200};
+			var width = $('.svg-container').width();
+			width = width > 900 ? 900 : width;
+			var height = width * 0.5;
+			var x = d3.scaleLinear().domain([0, 45]).range([0, width]);
+			var y = d3.scaleLinear().domain([13 * 60 + 30, 17 * 60 + 30]).range([height, 0]);
+			var valueline = d3.line()
+				.defined(function(d) {
+					return d.split !== null;
+				})
+				.x(function(d) { return x(d.km); })
+				.y(function(d) { return y(d.split); });
+			var svg = d3.select('.svg-container').append('svg')
+				.attr('width', width + margin.left + margin.right)
+				.attr('height', height + margin.bottom + margin.top)
+				.attr('text-rendering', 'geometricPrecision')
+				.attr('font-family', 'arial')
+				.attr('font-size', '9px')
+				.attr('fill', textColor)
+			.append('g')
+				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+			d3.tsv('berlin_marathon_results_1999_2018.txt', function(data) {
+				var run = '<div class="run"><div class="year">' + data.year +
+					'</div><div class="runner">' + data.runner +
+					' <span class="nationality">&ndash; ' + data.nationality + '</span></div>';
+				if (data.wr === 'yes') {
+					run += '<div class="time wr">' + data.finish + ' <strong>WR</strong></div>';
+				} else {
+					run += '<div class="time no-wr">' + data.finish + '</div>';
+				}
+				run += '</div>';
+				$('.info').append(run);
+				var splits = [];
+				var time = [];
+				var plotData = [];
+				$.each(km, function(i, v) {
+					var kmTime, timeSeconds;
+					if (v <= 40) {
+						if (data[v + 'km'] === 'NA') {
+							kmTime = null;
+						} else {
+							kmTime = data[v + 'km'].split(':');
+						}
+					} else if (v > 40) {
+						kmTime = data.finish.split(':');
+					}
+					if (kmTime !== null) {
+						kmTime = kmTime.map(function(x) {
+							return +x;
+						});
+						if (kmTime.length == 2) {
+							timeSeconds = kmTime[0] * 60 + kmTime[1];
+						} else if (kmTime.length > 2) {
+							timeSeconds = kmTime[0] * 60 * 60 + kmTime[1] * 60 + kmTime[2];
+						}
+					} else {
+						timeSeconds = null;
+					}
+					time.push(timeSeconds);
+					if (splits.length === 0) {
+						splits.push(timeSeconds);
+						plotData.push({km: v, split: timeSeconds});
+					} else if (splits.length < km.length - 1) {
+						var prevSplit = time[time.length - 2];
+						if (prevSplit !== null && timeSeconds !== null) {
+							splits.push(timeSeconds - prevSplit);
+							plotData.push({km: v, split: timeSeconds - prevSplit});
+						} else {
+							splits.push(null);
+							plotData.push({km: v, split: null});
+						}
+					} else {
+						// Extrapolate the pace for the last 2.195 km to a pace over 5 km.
+						var pace = Math.round((timeSeconds - time[time.length - 2]) / 2.195 * 5);
+						splits.push(pace);
+						plotData.push({km: +v, split: +pace});
+					}
+				});
+				var strokeColor = lightBlue;
+				if (data.wr === 'yes') {
+					strokeColor = berlinBlue;
+				}
+				svg.append('path')
+					.data([plotData])
+					.attr('fill', 'none')
+					.attr('id', data.year)
+					.attr('class', 'line')
+					.attr('stroke-width', 1)
+					.attr('stroke-linecap', 'round')
+					.attr('stroke-linejoin', 'round')
+					.attr('stroke', strokeColor)
+					.attr('d', valueline);
+			});
+
+			// Add the x and y axes, together with their labels.
+			svg.append('g')
+				.attr("transform", "translate(0," + height + ")")
+				.attr('class', 'axis')
+				.call(d3.axisBottom(x));
+			var yAxisTickValues = [];
+			for (var i = 0; i < 9; i++) {
+				yAxisTickValues.push(13 * 60 + 30 + i * 30);
+			}
+			svg.append('g')
+				.attr('class', 'axis')
+				.call(d3.axisLeft(y)
+						.tickValues(yAxisTickValues)
+						.tickFormat(function(d) {
+							var minutes = Math.floor(d/60);
+							var seconds = d % 60;
+							if (seconds === 0) {
+								seconds = '00';
+							}
+							return minutes + ':' + seconds;
+						}));
+			svg.append('text')
+				.attr('x', x(22.5))
+				.attr('y', height + margin.bottom / 2)
+				.attr('text-anchor', 'middle')
+				.attr('alignment-baseline', 'middle')
+				.attr('font-size', '14px')
+				.attr('fill', '#5e5e5e')
+				.text('Distance (km)');
+			svg.append('text')
+				.attr('x', x(0.5))
+				.attr('y', y(17 * 60 + 30))
+				.attr('text-anchor', 'start')
+				.attr('alignment-baseline', 'hanging')
+				.attr('font-size', '14px')
+				.attr('fill', '#5e5e5e')
+				.text('5km pace (min:sec)');
+
+			// Add some explanations to the figure.
+			svg.append('text')
+				.attr('x', x(5))
+				.attr('y', y(14 * 60))
+				.attr('text-anchor', 'start')
+				.attr('alignment-baseline', 'middle')
+				.attr('font-size', '12px')
+				.attr('fill', '#999')
+				.text('The lines only start at the 5km mark, because that is where the first split time was measured.');
+			var annotationText = ['While some of the non-world record runs do show how the runner',
+				'slowed down at the end, most runs are actually quite evenly paced.',
+				'World record runners didn\'t just finish fast, they also started fast.'];
+			$.each(annotationText, function(i, v) {
+				svg.append('text')
+					.attr('x', x(39))
+					.attr('y', y(16 * 60 + 30 - i * 10))
+					.attr('text-anchor', 'end')
+					.attr('alignment-baseline', 'middle')
+					.attr('font-size', '12px')
+					.attr('fill', '#999')
+					.text(v);
+			});
+
+			// Highlight a particular run's graph when hovering over the run info.
+			$(document).on({
+				mouseover: function() {
+					var year = $(this).find('.year').text();
+					var strokeColor = focusColorLight;
+					if ($(this).find('.time').hasClass('wr')) {
+						strokeColor = focusColor;
+					}
+					$('#' + year).css({'stroke': strokeColor, 'stroke-width': '2px'});
+				},
+				mouseout: function() {
+					var year = $(this).find('.year').text();
+					var strokeColor = lightBlue;
+					if ($(this).find('.time').hasClass('wr')) {
+						strokeColor = berlinBlue;
+					}
+					$('#' + year).css({'stroke': strokeColor, 'stroke-width': '1px'});
+				}
+			}, '.run');
+		});
+	</script>
 </body>
 </html>

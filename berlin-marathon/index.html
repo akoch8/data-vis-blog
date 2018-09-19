@@ -71,8 +71,8 @@
 				focusColor = '#ff6473',
 				focusColorLight = '#f5aeb5',
 				km = [5, 10, 15, 20, 25, 30, 35, 40, 42.195];
-			var margin = {top: 20, left: 100, bottom: 100, right: 200};
-			var width = $('.svg-container').width();
+			var margin = {top: 20, left: 100, bottom: 100, right: 20};
+			var width = $('.svg-container').width() - margin.left - margin.right;
 			width = width > 900 ? 900 : width;
 			var height = width * 0.5;
 			var x = d3.scaleLinear().domain([0, 45]).range([0, width]);
@@ -212,15 +212,19 @@
 				.text('5km pace (min:sec)');
 
 			// Add some explanations to the figure.
-			svg.append('text')
-				.attr('x', x(5))
-				.attr('y', y(14 * 60))
-				.attr('text-anchor', 'start')
-				.attr('alignment-baseline', 'middle')
-				.attr('font-size', '12px')
-				.attr('fill', '#999')
-				.text('The lines only start at the 5km mark, because that is where the first split time was measured.');
-			var annotationText = ['While some of the non-world record runs do show how the runner',
+			var annotationText = ['The lines only start at the 5km mark, because that is',
+				'where the first split time was measured.'];
+			$.each(annotationText, function(i, v) {
+				svg.append('text')
+					.attr('x', x(5))
+					.attr('y', y(14 * 60 - i * 10))
+					.attr('text-anchor', 'start')
+					.attr('alignment-baseline', 'middle')
+					.attr('font-size', '12px')
+					.attr('fill', '#999')
+					.text(v);
+			});
+			annotationText = ['While some of the non-world record runs do show how the runner',
 				'slowed down at the end, most runs are actually quite evenly paced.',
 				'World record runners didn\'t just finish fast, they also started fast.'];
 			$.each(annotationText, function(i, v) {

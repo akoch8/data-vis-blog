@@ -8,4 +8,5 @@ Don't hesitate to get in touch whenever you run into any problems with my code, 
 
 ### Published blog posts
 
-* [eu-unemployment](http://alexanderkoch.be/blog/eu-unemployment-rates.html)
+* [EU unemployment](http://alexanderkoch.be/blog/eu-unemployment-rates.html)
+* [Berlin marathon](http://alexanderkoch.be/blog/berlin-marathon.html)

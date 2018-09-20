@@ -11,7 +11,7 @@ $(function() {
 		km = [5, 10, 15, 20, 25, 30, 35, 40, 42.195];
 	var margin = {top: 20, left: 100, bottom: 100, right: 20};
 	var width = $('.line-chart').width() - margin.left - margin.right;
-	width = width > 900 ? 900 : width;
+	width = width > 900 ? 900 : width < 500 ? 500 : width;
 	var height = width * 0.5;
 	var x = d3.scaleLinear().domain([0, 45]).range([0, width]);
 	var y = d3.scaleLinear().domain([13 * 60 + 30, 17 * 60 + 30]).range([height, 0]);

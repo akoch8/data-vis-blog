@@ -8,8 +8,9 @@ $(function() {
 		annotationFontSize = '12px',
 		axisLabelColor = '#5e5e5e',
 		axisLabelFontSize = '14px';
-	var margin = {top: 10, left: 100, bottom: 100, right: 10};
-	var width = $('.line-chart').width() / 4 - margin.left - margin.right;
+	var margin = {top: 10, left: 100, bottom: 100, right: 0};
+	var width = $('.line-chart').width() / 2.5 - margin.left - margin.right;
+	width = width < 300 ? 300 : width;
 	var height = width;
 	var x = d3.scaleLinear().domain([0, 1]).range([0, width]);
 	var y = d3.scaleLinear().domain([60 * 60, 65 * 60]).range([height, 0]);
@@ -49,7 +50,7 @@ $(function() {
 			.attr('stroke-width', 1)
 			.attr('stroke-linecap', 'round')
 			.attr('stroke-linejoin', 'round')
-			.attr('class', data.year)
+			.attr('class', 'line ' + data.year)
 			.attr('stroke', runColor);
 		svg.append('circle')
 			.attr('cx', x(0.25))

@@ -13,7 +13,9 @@
 		}
 		.run {
 			display: inline-block;
-			margin: 0 0.5em 0.5em 0;
+			font-size: 12px;
+			line-height: 1.2;
+			margin: 0 0.25em 0.25em 0;
 			max-width: 20rem;
 			padding: 0.5em 1em 0.5em 0.5em;
 		}
@@ -46,6 +48,43 @@
 		.no-wr {
 			color: #bdcede;
 		}
+		.svg-container {
+			position: relative;
+		}
+		.animation {
+			margin-left: 100px;
+			margin-top: 2rem;
+		}
+		.animation-button {
+			background: #5e5e5e;
+			box-shadow: 0 2px 10px #ddd;
+			color: #fcfcfc;
+			display: inline-block;
+			padding: 0 0.5em;
+			text-align: center;
+			user-select: none;
+		}
+		.animation-button:hover {
+			cursor: pointer;
+		}
+		.animation-button:active {
+			background: #6e6e6e;
+		}
+		.animation-year {
+			display: inline-block;
+			font-weight: 700;
+			margin-left: 1rem;
+		}
+		.inactive {
+			background: #bbb;
+			box-shadow: none;
+		}
+		.inactive:hover {
+			cursor: default;
+		}
+		.inactive:active {
+			background: #bbb;
+		}
 		.axis line {
 			stroke: #bbb;
 		}
@@ -56,10 +95,22 @@
 			fill: #5e5e5e;
 			font-size: 11px;
 		}
+		.line {
+			-o-transition: opacity 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
+			-moz-transition: opacity 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
+			-webkit-transition: opacity 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
+			transition: opacity 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
+		}
 	</style>
 </head>
 <body>
 	<div class="info"></div>
+	<div class="animation">
+		<div class="animation-button">
+			animate
+		</div>
+		<div class="animation-year"></div>
+	</div>
 	<div class="svg-container"></div>
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="d3.min.js"></script>
@@ -70,6 +121,10 @@
 				lightBlue = '#bdcede',
 				focusColor = '#ff6473',
 				focusColorLight = '#f5aeb5',
+				annotationColor = '#999',
+				annotationFontSize = '12px',
+				axisLabelColor = '#5e5e5e',
+				axisLabelFontSize = '14px',
 				km = [5, 10, 15, 20, 25, 30, 35, 40, 42.195];
 			var margin = {top: 20, left: 100, bottom: 100, right: 20};
 			var width = $('.svg-container').width() - margin.left - margin.right;
@@ -96,7 +151,14 @@
 				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 			// ...and add the data.
+			var years = [];
 			d3.tsv('berlin_marathon_results_1999_2018.txt', function(data) {
+				if (+data.year >= years[years.length]) {
+					years.push(+data.year);
+				} else {
+					years.unshift(+data.year);
+				}
+
 				// Add the run to the information section above the figure.
 				var run = '<div class="run"><div class="year">' + data.year +
 					'</div><div class="runner">' + data.runner +
@@ -111,9 +173,9 @@
 
 				// In order to plot the data, we need to extract and process the variables that we
 				// are interested in (distance and split).
-				var splits = [];
-				var time = [];
-				var plotData = [];
+				var splits = [],
+					time = [],
+					plotData = [];
 				$.each(km, function(i, v) {
 					var kmTime, timeSeconds;
 					if (v <= 40) {
@@ -199,16 +261,16 @@
 				.attr('y', height + margin.bottom / 2)
 				.attr('text-anchor', 'middle')
 				.attr('alignment-baseline', 'middle')
-				.attr('font-size', '14px')
-				.attr('fill', '#5e5e5e')
+				.attr('font-size', axisLabelFontSize)
+				.attr('fill', axisLabelColor)
 				.text('Distance (km)');
 			svg.append('text')
 				.attr('x', x(0.5))
 				.attr('y', y(17 * 60 + 30))
 				.attr('text-anchor', 'start')
 				.attr('alignment-baseline', 'hanging')
-				.attr('font-size', '14px')
-				.attr('fill', '#5e5e5e')
+				.attr('font-size', axisLabelFontSize)
+				.attr('fill', axisLabelColor)
 				.text('5km pace (min:sec)');
 
 			// Add some explanations to the figure.
@@ -217,11 +279,11 @@
 			$.each(annotationText, function(i, v) {
 				svg.append('text')
 					.attr('x', x(5))
-					.attr('y', y(14 * 60 - i * 10))
+					.attr('y', y(14 * 60 - i * 7))
 					.attr('text-anchor', 'start')
 					.attr('alignment-baseline', 'middle')
-					.attr('font-size', '12px')
-					.attr('fill', '#999')
+					.attr('font-size', annotationFontSize)
+					.attr('fill', annotationColor)
 					.text(v);
 			});
 			annotationText = ['While some of the non-world record runs do show how the runner',
@@ -230,33 +292,89 @@
 			$.each(annotationText, function(i, v) {
 				svg.append('text')
 					.attr('x', x(39))
-					.attr('y', y(16 * 60 + 30 - i * 10))
+					.attr('y', y(16 * 60 + 30 - i * 7))
 					.attr('text-anchor', 'end')
 					.attr('alignment-baseline', 'middle')
-					.attr('font-size', '12px')
-					.attr('fill', '#999')
+					.attr('font-size', annotationFontSize)
+					.attr('fill', annotationColor)
 					.text(v);
 			});
 
-			// Highlight a particular run's graph when hovering over the run info.
+			// Highlight a particular run's graph when hovering over or clicking on the run info.
 			$(document).on({
 				mouseover: function() {
-					var year = $(this).find('.year').text();
-					var strokeColor = focusColorLight;
-					if ($(this).find('.time').hasClass('wr')) {
-						strokeColor = focusColor;
+					var year = $(this).find('.year').text(),
+						path = $('#' + year),
+						strokeColor;
+					if (!path.hasClass('selected')) {
+						strokeColor = focusColorLight;
+						if ($(this).find('.time').hasClass('wr')) {
+							strokeColor = focusColor;
+						}
+						$('#' + year).css({'stroke': strokeColor, 'stroke-width': '2px'});
 					}
-					$('#' + year).css({'stroke': strokeColor, 'stroke-width': '2px'});
 				},
 				mouseout: function() {
-					var year = $(this).find('.year').text();
-					var strokeColor = lightBlue;
-					if ($(this).find('.time').hasClass('wr')) {
-						strokeColor = berlinBlue;
+					var year = $(this).find('.year').text(),
+						path = $('#' + year),
+						strokeColor;
+					if (!path.hasClass('selected')) {
+						strokeColor = lightBlue;
+						if ($(this).find('.time').hasClass('wr')) {
+							strokeColor = berlinBlue;
+						}
+						$('#' + year).css({'stroke': strokeColor, 'stroke-width': '1px'});
 					}
-					$('#' + year).css({'stroke': strokeColor, 'stroke-width': '1px'});
+				},
+				click: function() {
+					var year = $(this).find('.year').text(),
+						path = $('#' + year),
+						strokeColor;
+					if (path.hasClass('selected')) {
+						path.removeClass('selected');
+						strokeColor = lightBlue;
+						if ($(this).find('.time').hasClass('wr')) {
+							strokeColor = berlinBlue;
+						}
+						path.css({'stroke': strokeColor, 'stroke-width': '1px'});
+					} else {
+						$('.selected').each(function() {
+							strokeColor = lightBlue;
+							if ($(this).find('.time').hasClass('wr')) {
+								strokeColor = berlinBlue;
+							}
+							$(this).css({'stroke': strokeColor, 'stroke-width': '1px'});
+						}).removeClass('selected');
+						strokeColor = focusColorLight;
+						if ($(this).find('.time').hasClass('wr')) {
+							strokeColor = focusColor;
+						}
+						path.css({'stroke': strokeColor, 'stroke-width': '2px'});
+						path.addClass('selected');
+					}
 				}
 			}, '.run');
+
+			// Animate the figure by redrawing the paths year by year.
+			$('.animation-button').on('click', function() {
+				if (!$(this).hasClass('inactive')) {
+					$(this).addClass('inactive');
+					$('svg').find('.line').css({'opacity': 0});
+					(function delayedLoop(i) {
+						setTimeout(function() {
+							$('#' + years[i]).css({'opacity': 1});
+							$('.animation-year').text(years[i]);
+							if (i < years.length) {
+								i++;
+								delayedLoop(i);
+							} else {
+								$('.animation-button').removeClass('inactive');
+								$('.animation-year').text('');
+							}
+						}, 400);
+					})(0);
+				}
+			});
 		});
 	</script>
 </body>

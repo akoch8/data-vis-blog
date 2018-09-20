@@ -109,8 +109,7 @@ $(function() {
 		svg.append('path')
 			.data([plotData])
 			.attr('fill', 'none')
-			.attr('id', data.year)
-			.attr('class', 'line')
+			.attr('class', 'line ' + data.year)
 			.attr('stroke-width', 1)
 			.attr('stroke-linecap', 'round')
 			.attr('stroke-linejoin', 'round')
@@ -132,7 +131,7 @@ $(function() {
 		.call(d3.axisLeft(y)
 				.tickValues(yAxisTickValues)
 				.tickFormat(function(d) {
-					var minutes = Math.floor(d/60);
+					var minutes = Math.floor(d / 60);
 					var seconds = d % 60;
 					if (seconds === 0) {
 						seconds = '00';
@@ -187,31 +186,31 @@ $(function() {
 	$(document).on({
 		mouseover: function() {
 			var year = $(this).find('.year').text(),
-				path = $('#' + year),
+				path = $('.' + year),
 				strokeColor;
 			if (!path.hasClass('selected')) {
 				strokeColor = focusColorLight;
 				if ($(this).find('.time').hasClass('wr')) {
 					strokeColor = focusColor;
 				}
-				$('#' + year).css({'stroke': strokeColor, 'stroke-width': '2px'});
+				$('.' + year).css({'stroke': strokeColor, 'stroke-width': '2px'});
 			}
 		},
 		mouseout: function() {
 			var year = $(this).find('.year').text(),
-				path = $('#' + year),
+				path = $('.' + year),
 				strokeColor;
 			if (!path.hasClass('selected')) {
 				strokeColor = lightBlue;
 				if ($(this).find('.time').hasClass('wr')) {
 					strokeColor = berlinBlue;
 				}
-				$('#' + year).css({'stroke': strokeColor, 'stroke-width': '1px'});
+				$('.' + year).css({'stroke': strokeColor, 'stroke-width': '1px'});
 			}
 		},
 		click: function() {
 			var year = $(this).find('.year').text(),
-				path = $('#' + year),
+				path = $('.' + year),
 				strokeColor;
 			if (path.hasClass('selected')) {
 				path.removeClass('selected');
@@ -245,7 +244,7 @@ $(function() {
 			$('.line-chart').find('.line').css({'opacity': 0});
 			(function delayedLoop(i) {
 				setTimeout(function() {
-					$('#' + years[i]).css({'opacity': 1});
+					$('.' + years[i]).css({'opacity': 1});
 					$('.animation-year').text(years[i]);
 					if (i < years.length) {
 						i++;

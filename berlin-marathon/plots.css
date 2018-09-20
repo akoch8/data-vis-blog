@@ -22,6 +22,9 @@
 .run:active {
 	background: #ececec;
 }
+.info .selected {
+	background: #fcfcfc;
+}
 .year {
 	font-size: 12px;
 }

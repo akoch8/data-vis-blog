@@ -210,29 +210,45 @@ $(function() {
 		},
 		click: function() {
 			var year = $(this).find('.year').text(),
-				path = $('.' + year),
+				svgElements = $('.' + year),
 				strokeColor;
-			if (path.hasClass('selected')) {
-				path.removeClass('selected');
+			if ($(this).hasClass('selected')) {
+				$(this).removeClass('selected');
+				svgElements.removeClass('selected');
 				strokeColor = lightBlue;
 				if ($(this).find('.time').hasClass('wr')) {
 					strokeColor = berlinBlue;
 				}
-				path.css({'stroke': strokeColor, 'stroke-width': '1px'});
+				svgElements.css({'stroke': strokeColor, 'stroke-width': '1px'});
+				$.each(svgElements, function() {
+					if ($(this)[0].localName === 'circle') {
+						$(this).css({'fill': 'none'});
+					}	
+				});
 			} else {
-				$('.selected').each(function() {
+				$('svg .selected').each(function() {
 					strokeColor = lightBlue;
 					if ($(this).find('.time').hasClass('wr')) {
 						strokeColor = berlinBlue;
 					}
 					$(this).css({'stroke': strokeColor, 'stroke-width': '1px'});
+					if ($(this)[0].localName === 'circle') {
+						$(this).css({'fill': 'none'});
+					}
 				}).removeClass('selected');
+				$('.info').find('.selected').removeClass('selected');
 				strokeColor = focusColorLight;
 				if ($(this).find('.time').hasClass('wr')) {
 					strokeColor = focusColor;
 				}
-				path.css({'stroke': strokeColor, 'stroke-width': '2px'});
-				path.addClass('selected');
+				svgElements.css({'stroke': strokeColor, 'stroke-width': '2px'});
+				$.each(svgElements, function() {
+					if ($(this)[0].localName === 'circle') {
+						$(this).css({'fill': strokeColor});
+					}	
+				});
+				svgElements.addClass('selected');
+				$(this).addClass('selected');
 			}
 		}
 	}, '.run');

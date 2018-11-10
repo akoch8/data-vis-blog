@@ -1,5 +1,5 @@
 .info {
-	margin-left: 100px;
+	margin-left: 80px;
 }
 .run {
 	display: inline-block;
@@ -48,7 +48,7 @@
 	display: inline-block;
 }
 .animation {
-	margin-left: 100px;
+	margin-left: 80px;
 	margin-top: 2rem;
 }
 .animation-button {
@@ -100,4 +100,16 @@
 	-moz-transition: opacity 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	-webkit-transition: opacity 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: opacity 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+@media only screen and (max-width: 768px) {
+	.run {
+		display: block;
+	}
+	.info {
+		border: 1px solid #bbb;
+		height: 200px;
+		margin: 0 auto;
+		overflow-x: scroll;
+		width: 90%;
+	}
 }

@@ -9,7 +9,7 @@ $(function() {
 		axisLabelColor = '#5e5e5e',
 		axisLabelFontSize = '14px',
 		km = [5, 10, 15, 20, 25, 30, 35, 40, 42.195];
-	var margin = {top: 20, left: 100, bottom: 100, right: 20};
+	var margin = {top: 20, left: 80, bottom: 80, right: 20};
 	var width = $('.line-chart').width() - margin.left - margin.right;
 	width = width > 900 ? 900 : width < 500 ? 500 : width;
 	var height = width * 0.5;
@@ -161,7 +161,7 @@ $(function() {
 	$.each(annotationText, function(i, v) {
 		svg.append('text')
 			.attr('x', x(5))
-			.attr('y', y(14 * 60 - i * 8))
+			.attr('y', y(14 * 60 - i * 10))
 			.attr('text-anchor', 'start')
 			.attr('alignment-baseline', 'middle')
 			.attr('font-size', annotationFontSize)
@@ -174,7 +174,7 @@ $(function() {
 	$.each(annotationText, function(i, v) {
 		svg.append('text')
 			.attr('x', x(39))
-			.attr('y', y(16 * 60 + 30 - i * 8))
+			.attr('y', y(16 * 60 + 30 - i * 10))
 			.attr('text-anchor', 'end')
 			.attr('alignment-baseline', 'middle')
 			.attr('font-size', annotationFontSize)

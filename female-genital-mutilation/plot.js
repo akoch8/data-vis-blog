@@ -127,6 +127,22 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 						}
 					}
 				});
+				d3.selectAll('#wealth-prevalence-lineplot .lineplot path')
+					.transition()
+					.duration(200)
+					.style('stroke', function() {
+						var countryLine = d3.select(this).attr('data-country');
+						if (countryLine !== country) {
+							var prevalence = data[countryLine][index];
+							if (prevalence) {
+								return convertToGrayscale(prevalence);
+							} else {
+								return '#fff';
+							}
+						} else {
+							return '#ffcd60';
+						}
+					});
 			}
 		})
 		.on('mouseout', function(d) {
@@ -150,7 +166,87 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 					}
 				}
 			});
+
+			// Recolor all the lines in the line plot.
+			d3.selectAll('#wealth-prevalence-lineplot .lineplot path')
+					.transition()
+					.duration(200)
+					.style('stroke', function() {
+						var countryLine = d3.select(this).attr('data-country');
+						var prevalence = data[countryLine][index];
+						if (prevalence) {
+							return convertToColorscale(prevalence);
+						} else {
+							return '#fff';
+						}
+					});
 		});
+};
+
+var drawLineplot = function(svgElement, colorScale, i) {
+	var margin = {top: 10, right: 90, bottom: 40, left: 30};
+	var width = svgElement.attr('width');
+	var height = svgElement.attr('height');
+	var x = d3.scaleLinear().domain([0, 4]).range([0, width - margin.left - margin.right]);
+	var y = d3.scaleLinear().domain([0, 100]).range([height - margin.top - margin.bottom, 0]);
+	var line = d3.line()
+		.defined(function(d, i) {
+			return d !== null;
+		})
+		.x(function(d, i) { return x(i); })
+		.y(function(d, i) { return y(d); });
+	var g = svgElement.append('g')
+				.attr('class', 'lineplot')
+				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+	$.each(data, function(country, data) {
+		var plotData = data.slice(3);
+		g.append('path')
+			.data([plotData])
+			.attr('fill', 'none')
+			.attr('stroke-width', function(d) {
+				if (d[0] < d[4] && d[4] > 10) {
+					return 3;
+				} else {
+					return 1;
+				}
+			})
+			.attr('stroke', function() {
+				return colorScale(data[0]);
+			})
+			.attr('d', line)
+			.attr('data-country', country);
+		g.append('text')
+			.data([plotData])
+			.attr('x', width - margin.right - margin.left + 5)
+			.attr('y', function(d) {
+				return y(d[4]);
+			})
+			.attr('class', 'country-label')
+			.attr('opacity', function(d) {
+				if (d[0] < d[4] && d[4] > 10) {
+					return 1;
+				} else {
+					return 0;
+				}
+			})
+			.text(country);
+	});
+	var xAxisLabels = ['poorest', 'second', 'middle', 'fourth', 'richest'];
+	svgElement.append('g')
+		.attr('transform', 'translate(' + margin.left + ',' + (height - margin.bottom) + ')')
+		.attr('class', 'axis x-axis')
+		.call(d3.axisBottom(x)
+			.tickValues([0, 1, 2, 3, 4])
+			.tickFormat(function(d) {
+				return xAxisLabels[d];
+			}))
+		.selectAll('text')
+			.attr('transform', 'translate(10, 0) rotate(45)')
+			.style('text-anchor', 'start');
+	svgElement.append('g')
+		.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+		.attr('class', 'axis y-axis')
+		.call(d3.axisLeft(y));
 };
 
 var updateMap = function(mapId, i, value, colorScale) {
@@ -197,22 +293,35 @@ $(function() {
 	var margin = {top: 50, right: 10, bottom: 10, left: 10};
 	var w = $('.svg-container').width();
 	var h = w;
-	var colorScale = d3.scaleLinear().domain([0, 100]).range(['#e4f1e1', '#0d585f']);
+	//var colorScale = d3.scaleLinear().domain([0, 100]).range(['#e4f1e1', '#0d585f']);
+	var colorScale = d3.scaleLinear().domain([0, 100]).range(['#e4f1e1', '#033f45']);
 
 	// Create cloropleths of the overall prevalence of FGM, the prevalence in urban versus rural
 	// areas and the prevalence in relation to the wealth quintile.
 	var svgOverall = d3.select('#overall-prevalence')
 		.append('svg')
 		.attr('width', w + margin.left + margin.right)
-		.attr('height', h + margin.top);
+		.attr('height', h + margin.top)
+		.attr('text-rendering', 'geometricPrecision')
+		.attr('font-family', 'arial');
 	var svgResidence = d3.select('#residence-prevalence')
 		.append('svg')
 		.attr('width', w)
-		.attr('height', h + margin.top);
+		.attr('height', h + margin.top)
+		.attr('text-rendering', 'geometricPrecision')
+		.attr('font-family', 'arial');
 	var svgWealth = d3.select('#wealth-prevalence')
 		.append('svg')
 		.attr('width', w)
-		.attr('height', h + margin.top);
+		.attr('height', h + margin.top)
+		.attr('text-rendering', 'geometricPrecision')
+		.attr('font-family', 'arial');
+	var svgWealthLineplot = d3.select('#wealth-prevalence-lineplot')
+		.append('svg')
+		.attr('width', $('.svg-explanation').width())
+		.attr('height', Math.round($('.svg-explanation').width()))
+		.attr('text-rendering', 'geometricPrecision')
+		.attr('font-family', 'arial');
 	d3.json('africa.json').then(function(africa) {
 		var featureCollection = topojson.feature(africa, africa.objects.countries);
 		var projection = d3.geoIdentity().fitExtent([[margin.left, margin.top], [w - margin.right, h + margin.top]], featureCollection);
@@ -220,6 +329,7 @@ $(function() {
 		drawMap(svgOverall, path, featureCollection, colorScale, 0);
 		drawMap(svgResidence, path, featureCollection, colorScale, 1);
 		drawMap(svgWealth, path, featureCollection, colorScale, 3);
+		drawLineplot(svgWealthLineplot, colorScale, 3);
 	});
 	svgOverall.append('text')
 		.attr('x', w / 2)
@@ -260,7 +370,6 @@ $(function() {
 		var intervalId;
 		var range = $(this).parent().find('input[type=range]');
 		var maxValue = parseInt(range.attr('max'));
-		console.log('maxValue = ' + maxValue);
 		if ($(this).hasClass('playing')) {
 			intervalId = $(this).data('intervalid');
 			clearInterval(intervalId);

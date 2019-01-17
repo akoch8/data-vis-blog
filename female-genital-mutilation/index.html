@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Female genital mutilation</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<main>
+		<section class="about about__wide">
+			<div class="figure-container">
+				<div class="svg-explanation">
+					<h2>Prevalence</h2>
+					<p></p>
+				</div>
+				<div id="overall-prevalence" class="svg-container"></div>
+			</div>
+		</section>
+		<section class="about about__wide">
+			<div class="figure-container">
+				<div class="svg-explanation">
+					<h2>Residence</h2>
+					<p></p>
+					<div>
+						<div class="play-button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+								<polygon points="5 3 19 12 5 21 5 3"></polygon>
+							</svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause">
+								<rect x="6" y="4" width="4" height="16"></rect>
+								<rect x="14" y="4" width="4" height="16"></rect>
+							</svg>
+						</div>
+						<span>urban</span>
+						<input type="range" id="residence-slider" min="0" max="1" value="0">
+						<span>rural</span>
+					</div>
+				</div>
+				<div id="residence-prevalence" class="svg-container"></div>
+			</div>
+		</section>
+		<section class="about about__wide">
+			<div class="figure-container">
+				<div class="svg-explanation">
+					<h2>Wealth</h2>
+					<p></p>
+					<div>
+						<div class="play-button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+								<polygon points="5 3 19 12 5 21 5 3"></polygon>
+							</svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause">
+								<rect x="6" y="4" width="4" height="16"></rect>
+								<rect x="14" y="4" width="4" height="16"></rect>
+							</svg>
+						</div>
+						<span>poorest</span>
+						<input type="range" id="wealth-slider" min="0" max="4" value="0">
+						<span>richest</span>
+					</div>
+				</div>
+				<div id="wealth-prevalence" class="svg-container"></div>
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="d3.min.js"></script>
+	<script type="text/javascript" src="topojson.min.js"></script>
+	<script type="text/javascript" src="plot.js"></script>
+</body>
+</html>

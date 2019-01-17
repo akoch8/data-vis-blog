@@ -2,36 +2,36 @@
 // The Humanitarian Data Exchange
 // https://data.humdata.org/dataset/female-genital-mutilation-and-cutting-women-who-have-undergone-fgm-c
 var data = {
-	//country: overall prevalence, urban, rural, poorest, second, middle, fourth, richest
-	'Benin': [9.2, 5.2, 13.1, 16.2, 13.5, 10.3, 6.6, 2.3],
-	'Burkina Faso': [75.8, 68.7, 78.4, 77.3, 78.1, 77.8, 79.6, 68.5],
-	'Cameroon': [1.4, 0.9, 2.1, 1.3, 4, 1, 0.9, 0.7],
-	'Central African Republic': [24.2, 18.1, 28.7, 33.6, 31.2, 26, 17.2, 14.9],
-	'Chad': [38.4, 40.1, 37.9, 46.1, 42, 37, 30.3, 37.3],
-	'Ivory Coast': [38.2, 37.7, 38.8, null, null, null, null, null],
-	'Djibouti': [93.1, 93.1, 95.5, null, null, null, null, null],
-	'Egypt': [87.2, 77.4, 92.6, 94.4, 92.6, 92.2, 87.2, 69.8],
-	'Eritrea': [83, 80, 85, 89.4, 85.6, 84.4, 83.3, 75.2],
-	'Ethiopia': [65.2, 53.9, 68.4, 65, 69.3, 69, 68.6, 57.3],
-	'Gambia': [74.9, 71.6, 79.1, 79.3, 77.6, 82.2, 73, 66.1],
-	'Ghana': [3.8, 2.5, 5.3, 12.8, 4.1, 2.7, 1.4, 1.1],
-	'Guinea': [96.9, 96.8, 97, null, null, null, null, null],
-	'Guinea Bissau': [44.9, 39.8, 50.1, 17.9, 59.1, 65.4, 47.2, 36.1],
-	'Iraq': [8.1, 9, 5.8, 9.8, 12.1, 9.6, 5.5, 4.2],
-	'Kenya': [21, 13.8, 25.9, 39.8, 26, 17.8, 17.2, 12],
-	'Liberia': [49.8, 40.8, 64.8, 69.5, 65.2, 56.8, 40.6, 29.1],
-	'Mali': [82.7, 84.8, 82, 63.8, 84, 87.9, 88.8, 86.8],
+	//country: overall prevalence, rural, urban, poorest, second, middle, fourth, richest
+	'Benin': [9.2, 13.1, 5.2, 16.2, 13.5, 10.3, 6.6, 2.3],
+	'Burkina Faso': [75.8, 78.4, 68.7, 77.3, 78.1, 77.8, 79.6, 68.5],
+	'Cameroon': [1.4, 2.1, 0.9, 1.3, 4, 1, 0.9, 0.7],
+	'Central African Republic': [24.2, 28.7, 18.1, 33.6, 31.2, 26, 17.2, 14.9],
+	'Chad': [38.4, 37.9, 40.1, 46.1, 42, 37, 30.3, 37.3],
+	'Ivory Coast': [38.2, 38.8, 37.7, null, null, null, null, null],
+	'Djibouti': [93.1, 95.5, 93.1, null, null, null, null, null],
+	'Egypt': [87.2, 92.6, 77.4, 94.4, 92.6, 92.2, 87.2, 69.8],
+	'Eritrea': [83, 85, 80, 89.4, 85.6, 84.4, 83.3, 75.2],
+	'Ethiopia': [65.2, 68.4, 53.9, 65, 69.3, 69, 68.6, 57.3],
+	'Gambia': [74.9, 79.1, 71.6, 79.3, 77.6, 82.2, 73, 66.1],
+	'Ghana': [3.8, 5.3, 2.5, 12.8, 4.1, 2.7, 1.4, 1.1],
+	'Guinea': [96.9, 97, 96.8, null, null, null, null, null],
+	'Guinea Bissau': [44.9, 50.1, 39.8, 17.9, 59.1, 65.4, 47.2, 36.1],
+	//'Iraq': [8.1, 5.8, 9, 9.8, 12.1, 9.6, 5.5, 4.2],
+	'Kenya': [21, 25.9, 13.8, 39.8, 26, 17.8, 17.2, 12],
+	'Liberia': [49.8, 64.8, 40.8, 69.5, 65.2, 56.8, 40.6, 29.1],
+	'Mali': [82.7, 82, 84.8, 63.8, 84, 87.9, 88.8, 86.8],
 	'Mauritania': [66.6, null, null, null, null, null, null, null],
-	'Niger': [2, 1.2, 2.1, 1.7, 1.7, 2.4, 3, 1],
-	'Nigeria': [24.8, 32.3, 19.3, 16.5, 20.3, 23.5, 30.6, 31],
-	'Senegal': [24.2, 18.5, 29.5, null, null, null, null, null],
-	'Sierra Leone': [89.6, 80.9, 94.3, 94.8, 94.5, 94.9, 90.3, 76.9],
-	'Somalia': [97.9, 97.1, 98.4, 98.4, 99.1, 98.4, 97.5, 96.2],
-	'Sudan': [86.6, 85.5, 87.2, 88, 81.7, 80.7, 90, 91.6],
-	'Togo': [4.7, 3.4, 5.7, 8.2, 5.1, 5.2, 4.1, 2.3],
+	'Niger': [2, 2.1, 1.2, 1.7, 1.7, 2.4, 3, 1],
+	'Nigeria': [24.8, 19.3, 32.3, 16.5, 20.3, 23.5, 30.6, 31],
+	'Senegal': [24.2, 29.5, 18.5, null, null, null, null, null],
+	'Sierra Leone': [89.6, 94.3, 80.9, 94.8, 94.5, 94.9, 90.3, 76.9],
+	'Somalia': [97.9, 98.4, 97.1, 98.4, 99.1, 98.4, 97.5, 96.2],
+	'Sudan': [86.6, 87.2, 85.5, 88, 81.7, 80.7, 90, 91.6],
+	'Togo': [4.7, 5.7, 3.4, 8.2, 5.1, 5.2, 4.1, 2.3],
 	'Uganda': [1.4, 1.4, 1.4, 2.2, 1.2, 1.2, 1, 1.5],
-	'United Republic of Tanzania': [10, 5.3, 12.7, 18.6, 10.3, 11.7, 8.8, 4.4],
-	'Yemen': [18.5, 17.1, 19.2, 26.5, 21, 13.3, 19.5, 14],
+	'United Republic of Tanzania': [10, 12.7, 5.3, 18.6, 10.3, 11.7, 8.8, 4.4]
+	//'Yemen': [18.5, 19.2, 17.1, 26.5, 21, 13.3, 19.5, 14],
 };
 
 var calculateTextWidth = function(text, font) {
@@ -88,6 +88,7 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 			var coord = d3.select(this).node().getBBox();
 			var textMargin = 10;
 			var selectedCountry = this;
+			var category = $(this).closest('.svg-container').attr('id');
 			var index = $(this).attr('data-index');
 			var annotationText = country;
 			if (country in data) {
@@ -127,7 +128,7 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 						}
 					}
 				});
-				d3.selectAll('#wealth-prevalence-lineplot .lineplot path')
+				d3.selectAll('#' + category + '-lineplot .lineplot path')
 					.transition()
 					.duration(200)
 					.style('stroke', function() {
@@ -150,6 +151,7 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 			var selectedCountry = this;
 			var country = d.properties.admin;
 			var index = $(this).attr('data-index');
+			var category = $(this).closest('.svg-container').attr('id');
 			$('.annotation-' + country.replace(/\s+/g, '-')).remove();
 			svgElement.selectAll('path').transition().duration(200).style('fill', function(d) {
 				var country = d.properties.admin;
@@ -168,7 +170,7 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 			});
 
 			// Recolor all the lines in the line plot.
-			d3.selectAll('#wealth-prevalence-lineplot .lineplot path')
+			d3.selectAll('#' + category + '-lineplot .lineplot path')
 					.transition()
 					.duration(200)
 					.style('stroke', function() {
@@ -183,11 +185,11 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 		});
 };
 
-var drawLineplot = function(svgElement, colorScale, i) {
+var drawLineplot = function(svgElement, colorScale, index, stopIndex, xDomain, xAxisTicks, xAxisLabels) {
 	var margin = {top: 10, right: 90, bottom: 40, left: 30};
 	var width = svgElement.attr('width');
 	var height = svgElement.attr('height');
-	var x = d3.scaleLinear().domain([0, 4]).range([0, width - margin.left - margin.right]);
+	var x = d3.scaleLinear().domain(xDomain).range([0, width - margin.left - margin.right]);
 	var y = d3.scaleLinear().domain([0, 100]).range([height - margin.top - margin.bottom, 0]);
 	var line = d3.line()
 		.defined(function(d, i) {
@@ -199,12 +201,12 @@ var drawLineplot = function(svgElement, colorScale, i) {
 				.attr('class', 'lineplot')
 				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 	$.each(data, function(country, data) {
-		var plotData = data.slice(3);
+		var plotData = data.slice(index, stopIndex);
 		g.append('path')
 			.data([plotData])
 			.attr('fill', 'none')
 			.attr('stroke-width', function(d) {
-				if (d[0] < d[4] && d[4] > 10) {
+				if (d[0] < d[d.length - 1]) {
 					return 3;
 				} else {
 					return 1;
@@ -219,11 +221,11 @@ var drawLineplot = function(svgElement, colorScale, i) {
 			.data([plotData])
 			.attr('x', width - margin.right - margin.left + 5)
 			.attr('y', function(d) {
-				return y(d[4]);
+				return y(d[d.length - 1]);
 			})
 			.attr('class', 'country-label')
 			.attr('opacity', function(d) {
-				if (d[0] < d[4] && d[4] > 10) {
+				if (d[0] < d[d.length - 1]) {
 					return 1;
 				} else {
 					return 0;
@@ -231,12 +233,11 @@ var drawLineplot = function(svgElement, colorScale, i) {
 			})
 			.text(country);
 	});
-	var xAxisLabels = ['poorest', 'second', 'middle', 'fourth', 'richest'];
 	svgElement.append('g')
 		.attr('transform', 'translate(' + margin.left + ',' + (height - margin.bottom) + ')')
 		.attr('class', 'axis x-axis')
 		.call(d3.axisBottom(x)
-			.tickValues([0, 1, 2, 3, 4])
+			.tickValues(xAxisTicks)
 			.tickFormat(function(d) {
 				return xAxisLabels[d];
 			}))
@@ -316,10 +317,16 @@ $(function() {
 		.attr('height', h + margin.top)
 		.attr('text-rendering', 'geometricPrecision')
 		.attr('font-family', 'arial');
+	var svgResidenceLineplot = d3.select('#residence-prevalence-lineplot')
+		.append('svg')
+		.attr('width', $('.svg-explanation').width())
+		.attr('height', $('.svg-explanation').width())
+		.attr('text-rendering', 'geometricPrecision')
+		.attr('font-family', 'arial');
 	var svgWealthLineplot = d3.select('#wealth-prevalence-lineplot')
 		.append('svg')
 		.attr('width', $('.svg-explanation').width())
-		.attr('height', Math.round($('.svg-explanation').width()))
+		.attr('height', $('.svg-explanation').width())
 		.attr('text-rendering', 'geometricPrecision')
 		.attr('font-family', 'arial');
 	d3.json('africa.json').then(function(africa) {
@@ -329,7 +336,14 @@ $(function() {
 		drawMap(svgOverall, path, featureCollection, colorScale, 0);
 		drawMap(svgResidence, path, featureCollection, colorScale, 1);
 		drawMap(svgWealth, path, featureCollection, colorScale, 3);
-		drawLineplot(svgWealthLineplot, colorScale, 3);
+		drawLineplot(svgResidenceLineplot, colorScale, 1, 3,
+			[0, 1],
+			[0, 1],
+			['urban', 'rural']);
+		drawLineplot(svgWealthLineplot, colorScale, 3, 8,
+			[0, 4],
+			[0, 1, 2, 3, 4],
+			['poorest', 'second', 'middle', 'fourth', 'richest']);
 	});
 	svgOverall.append('text')
 		.attr('x', w / 2)

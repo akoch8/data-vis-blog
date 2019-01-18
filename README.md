@@ -8,5 +8,6 @@ Don't hesitate to get in touch whenever you run into any problems with my code, 
 
 ### Published blog posts
 
-* [EU unemployment](http://alexanderkoch.be/blog/eu-unemployment-rates.html)
-* [Berlin marathon](http://alexanderkoch.be/blog/berlin-marathon.html)
+* [EU unemployment](https://alexanderkoch.be/blog/eu-unemployment-rates.html)
+* [Berlin marathon](https://alexanderkoch.be/blog/berlin-marathon.html)
+* [Female genital mutilation](https://alexanderkoch.be/blog/female-genital-mutilation.html)

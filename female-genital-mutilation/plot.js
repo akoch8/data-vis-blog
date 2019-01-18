@@ -380,12 +380,11 @@ $(function() {
 
 	// Automatically loop through the different values of a range slider when a user clicks the
 	// play/pause button next to it.
+	var intervalId;
 	$('.play-button').on('click', function() {
-		var intervalId;
 		var range = $(this).parent().find('input[type=range]');
 		var maxValue = parseInt(range.attr('max'));
 		if ($(this).hasClass('playing')) {
-			intervalId = $(this).data('intervalid');
 			clearInterval(intervalId);
 			$(this).removeClass('playing');
 		} else {
@@ -394,7 +393,6 @@ $(function() {
 				var newValue = rangeValue < maxValue ? rangeValue + 1 : 0;
 				range.val(newValue).trigger('input');
 			}, 1000);
-			$(this).data('intervalid', intervalId);
 			$(this).addClass('playing');
 		}
 	});

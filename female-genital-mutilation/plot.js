@@ -60,6 +60,8 @@ var convertToColorscale = function(x) {
 var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 	// Draw the map of Africa and assign a fill color to each country based on the prevalence of
 	// FGM in that country.
+	// TO DO
+	// add a legend
 	svgElement.append('g')
 		.attr('class', 'countries')
 		.selectAll('path')
@@ -306,13 +308,13 @@ $(function() {
 		.attr('text-rendering', 'geometricPrecision')
 		.attr('font-family', 'arial');
 	var svgResidence = d3.select('#residence-prevalence')
-		.append('svg')
+		.insert('svg', ':first-child')
 		.attr('width', w)
 		.attr('height', h + margin.top)
 		.attr('text-rendering', 'geometricPrecision')
 		.attr('font-family', 'arial');
 	var svgWealth = d3.select('#wealth-prevalence')
-		.append('svg')
+		.insert('svg', ':first-child')
 		.attr('width', w)
 		.attr('height', h + margin.top)
 		.attr('text-rendering', 'geometricPrecision')

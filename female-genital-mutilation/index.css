@@ -41,6 +41,16 @@ html, body {
 	text-anchor: middle;
 	text-transform: uppercase;
 }
+.legend {
+	fill: url('#svgGradient');
+	stroke: #3d3d3d;
+	stroke-width: 0.5px;
+}
+.legend-text {
+	alignment-baseline: middle;
+	fill: #3d3d3d;
+	font-size: 10px;
+}
 main {
 	margin: 0 auto;
 	width: 100%;

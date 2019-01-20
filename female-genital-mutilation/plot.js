@@ -57,11 +57,9 @@ var convertToColorscale = function(x) {
 	return colorScale(x);
 };
 
-var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
+var drawMap = function(svgElement, margin, path, featureCollection, colorScale, i) {
 	// Draw the map of Africa and assign a fill color to each country based on the prevalence of
 	// FGM in that country.
-	// TO DO
-	// add a legend
 	svgElement.append('g')
 		.attr('class', 'countries')
 		.selectAll('path')
@@ -185,6 +183,22 @@ var drawMap = function(svgElement, path, featureCollection, colorScale, i) {
 						}
 					});
 		});
+
+	// Add a legend.
+	var legendHeight = Math.round(svgElement.attr('height') / 5);
+	svgElement.append('rect')
+		.attr('class', 'legend')
+		.attr('x', 60)
+		.attr('y', svgElement.attr('height') - 200)
+		.attr('width', 10)
+		.attr('height', legendHeight);
+	for (var k = 0; k < 6; k++) {
+		svgElement.append('text')
+			.attr('class', 'legend-text')
+			.attr('x', 75)
+			.attr('y', svgElement.attr('height') - 200 + legendHeight - (legendHeight / 5) * k)
+			.text((k * 20) + '%');
+	}
 };
 
 var drawLineplot = function(svgElement, colorScale, index, stopIndex, xDomain, xAxisTicks, xAxisLabels) {
@@ -331,13 +345,33 @@ $(function() {
 		.attr('height', $('.svg-explanation').width())
 		.attr('text-rendering', 'geometricPrecision')
 		.attr('font-family', 'arial');
+
+	// Create the gradient that will be used for the figure legends.
+	var definitions = svgOverall.append('defs');
+	var gradient = definitions.append('linearGradient')
+		.attr('id', 'svgGradient')
+		.attr('x1', '0%')
+		.attr('y1', '0%')
+		.attr('x2', '0%')
+		.attr('y2', '100%');
+	gradient.append('stop')
+		.attr('class', 'start')
+		.attr('offset', '0%')
+		.attr('stop-color', '#033f45')
+		.attr('stop-opacity', 1);
+	gradient.append('stop')
+		.attr('class', 'end')
+		.attr('offset', '100%')
+		.attr('stop-color', '#e4f1e1')
+		.attr('stop-opacity', 1);
+
 	d3.json('africa.json').then(function(africa) {
 		var featureCollection = topojson.feature(africa, africa.objects.countries);
 		var projection = d3.geoIdentity().fitExtent([[margin.left, margin.top], [w - margin.right, h + margin.top]], featureCollection);
 		var path = d3.geoPath().projection(projection);
-		drawMap(svgOverall, path, featureCollection, colorScale, 0);
-		drawMap(svgResidence, path, featureCollection, colorScale, 1);
-		drawMap(svgWealth, path, featureCollection, colorScale, 3);
+		drawMap(svgOverall, margin, path, featureCollection, colorScale, 0);
+		drawMap(svgResidence, margin, path, featureCollection, colorScale, 1);
+		drawMap(svgWealth, margin, path, featureCollection, colorScale, 3);
 		drawLineplot(svgResidenceLineplot, colorScale, 1, 3,
 			[0, 1],
 			[0, 1],

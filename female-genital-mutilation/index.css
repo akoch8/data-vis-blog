@@ -57,6 +57,9 @@ h1, h2 {
 	vertical-align: top;
 	width: 50%;
 }
+.range-container {
+	text-align: center;
+}
 .svg-explanation {
 	display: inline-block;
 	font-size: 1rem;
@@ -68,6 +71,12 @@ input[type="range"] {
 }
 input[type="range"]:hover {
 	cursor: pointer;
+}
+.explanation {
+	color: #3d3d3d;
+	font-size: 0.8rem;
+	font-style: italic;
+	margin: 1rem 0;
 }
 .center-content {
 	text-align: center;

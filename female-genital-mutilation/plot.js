@@ -232,7 +232,10 @@ var drawLineplot = function(svgElement, colorScale, index, stopIndex, xDomain, x
 				return colorScale(data[0]);
 			})
 			.attr('d', line)
-			.attr('data-country', country);
+			.attr('data-country', country)
+			.on('mouseover', function() {
+				console.log($(this).attr('data-country'));
+			});
 		g.append('text')
 			.data([plotData])
 			.attr('x', width - margin.right - margin.left + 5)

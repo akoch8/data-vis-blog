@@ -68,6 +68,9 @@ var drawMap = function(svgElement, margin, path, featureCollection, colorScale, 
 		.append('path')
 		.attr('d', path)
 		.attr('data-index', i)
+		.attr('data-country', function(d) {
+			return d.properties.admin;
+		})
 		.attr('fill', function(d) {
 			var country = d.properties.admin;
 			if (country in data) {
@@ -216,8 +219,8 @@ var drawLineplot = function(svgElement, colorScale, index, stopIndex, xDomain, x
 	var g = svgElement.append('g')
 				.attr('class', 'lineplot')
 				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-	$.each(data, function(country, data) {
-		var plotData = data.slice(index, stopIndex);
+	$.each(data, function(country, countryData) {
+		var plotData = countryData.slice(index, stopIndex);
 		g.append('path')
 			.data([plotData])
 			.attr('fill', 'none')
@@ -229,12 +232,38 @@ var drawLineplot = function(svgElement, colorScale, index, stopIndex, xDomain, x
 				}
 			})
 			.attr('stroke', function() {
-				return colorScale(data[0]);
+				return colorScale(countryData[0]);
 			})
 			.attr('d', line)
 			.attr('data-country', country)
-			.on('mouseover', function() {
-				console.log($(this).attr('data-country'));
+			.on('mouseover', function(e) {
+				var lineCountry = $(this).attr('data-country');
+				var mapId = $(this).closest('.figure-container').find('.svg-container').attr('id');
+				d3.selectAll('#' + mapId + ' path').transition().duration(200).style('fill', function(d) {
+					var pathCountry = d.properties.admin;
+					if (pathCountry in data) {
+						var prevalence = data[pathCountry][index];
+						if (pathCountry !== lineCountry) {
+							return convertToGrayscale(prevalence);
+						} else {
+							return convertToColorscale(prevalence);
+						}
+					} else {
+						return '#fff';
+					}
+				});
+			})
+			.on('mouseout', function() {
+				var mapId = $(this).closest('.figure-container').find('.svg-container').attr('id');
+				d3.selectAll('#' + mapId + ' path').transition().duration(200).style('fill', function(d) {
+					var pathCountry = d.properties.admin;
+					if (pathCountry in data) {
+						var prevalence = data[pathCountry][index];
+						return convertToColorscale(prevalence);
+					} else {
+						return '#fff';
+					}
+				});
 			});
 		g.append('text')
 			.data([plotData])
@@ -243,6 +272,7 @@ var drawLineplot = function(svgElement, colorScale, index, stopIndex, xDomain, x
 				return y(d[d.length - 1]);
 			})
 			.attr('class', 'country-label')
+			.attr('data-country', country)
 			.attr('opacity', function(d) {
 				if (d[0] < d[d.length - 1]) {
 					return 1;

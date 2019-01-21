@@ -53,7 +53,7 @@ var convertToGrayscale = function(x) {
 
 var convertToColorscale = function(x) {
 	// Map a given value between 0 and 100 to an RGB color.
-	var colorScale = d3.scaleLinear().domain([0, 100]).range(['#e4f1e1', '#0d585f']);
+	var colorScale = d3.scaleLinear().domain([0, 100]).range(['#e4f1e1', '#033f45']);
 	return colorScale(x);
 };
 
@@ -153,11 +153,11 @@ var drawMap = function(svgElement, margin, path, featureCollection, colorScale, 
 			var index = $(this).attr('data-index');
 			var category = $(this).closest('.svg-container').attr('id');
 			$('.annotation-' + country.replace(/\s+/g, '-')).remove();
-			svgElement.selectAll('path').transition().duration(200).style('fill', function(d) {
-				var country = d.properties.admin;
-				if (this !== selectedCountry) {
-					if (country in data) {
-						var prevalence = data[country][index];
+			svgElement.selectAll('path').transition().duration(200).style('fill', function(pathData) {
+				var pathCountry = pathData.properties.admin;
+				if (pathCountry !== country) {
+					if (pathCountry in data) {
+						var prevalence = data[pathCountry][index];
 						if (prevalence) {
 							return convertToColorscale(prevalence);
 						} else {

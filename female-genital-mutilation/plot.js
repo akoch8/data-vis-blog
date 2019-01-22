@@ -398,7 +398,7 @@ $(function() {
 		.attr('stop-color', '#e4f1e1')
 		.attr('stop-opacity', 1);
 
-	d3.json('africa.json').then(function(africa) {
+	d3.json('data-vis-blog/female-genital-mutilation/africa.json').then(function(africa) {
 		var featureCollection = topojson.feature(africa, africa.objects.countries);
 		var projection = d3.geoIdentity().fitExtent([[margin.left, margin.top], [w - margin.right, h + margin.top]], featureCollection);
 		var path = d3.geoPath().projection(projection);

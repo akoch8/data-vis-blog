@@ -1,0 +1,211 @@
+rank	name	count
+1	Edward Tufte	21
+2	Nadieh Bremer	19
+3	Hans Rosling	18
+4	Alberto Cairo	17
+5	Ben Fry	16
+6	Mike Bostock	16
+7	Moritz Stefaner	14
+8	Andy Kirk	12
+9	Nathan Yau	11
+10	Nicholas Felton	11
+11	Stephen Few	11
+12	Jer Thorp	10
+13	Aaron Koblin	9
+14	Fernanda Viégas	8
+15	Martin Wattenberg	8
+16	Stamen Design	8
+17	accurat	7
+18	Ben Schneiderman	7
+19	DensityDesign	7
+20	Manuel Lima	7
+21	Shirley Wu	7
+22	Stefanie Posavec	7
+23	Giorgia Lupi	6
+24	NYT Graphics	6
+25	David McCandless	5
+26	Nigel Holmes	5
+27	Cole Knafic	4
+28	Hadley Wickham	4
+29	Ian Johnson	4
+30	Jeffrey Heer	4
+31	John Burn-Murdoch	4
+32	John Grimwade	4
+33	Jonathan Harris	4
+34	Lisa Charlotte Rost	4
+35	Paolo Ciuccarelli	4
+36	Robert Kosara	4
+37	Santiago Ortiz	4
+38	Amanda Cox	3
+39	Andrew Vande Moere	3
+40	Bret Victor	3
+41	Casey Reas	3
+42	Enrico Bertini	3
+43	Francesco Franchi	3
+44	Info Aesthetics	3
+45	Jaques Bertin	3
+46	John Maeda	3
+47	Karsten Schmidt	3
+48	Marius Watz	3
+49	Mona Chalabi	3
+50	Tamara Munzer	3
+51	Andy Kriebel	2
+52	Archie Tse	2
+53	bestiario_	2
+54	Federica Fragapane	2
+55	Florence Nightingale	2
+56	Jan Willem Tulp	2
+57	Jason Davies	2
+58	Jerome Cukier	2
+59	Jock Mackinlay	2
+60	Joost Grootens	2
+61	Kim Rees	2
+62	Kirk Goldsberry	2
+63	Laura Kurgan	2
+64	Lisa Strausfeld	2
+65	Mark Hansen	2
+66	Otto & Marie Neurath	2
+67	Otto Neurath	2
+68	Pitch Interactive	2
+69	Shan Carter	2
+70	Simon Rogers	2
+71	The Pudding	2
+72	Tony Chu	2
+73	5W Infographics	1
+74	Adrian Holovaty	1
+75	Albert-László Barabási	1
+76	Amit Pitaru	1
+77	Amy Franceschini	1
+78	Andy Cotgreave	1
+79	Andy Warhol	1
+80	Artur Galocha	1
+81	Bang Wong	1
+82	Bill Shander	1
+83	Bloomberg business week graphics desk	1
+84	Bloomberg Graphics	1
+85	Bob Rudis	1
+86	Bruce Mau Design	1
+87	calibro	1
+88	Catalogtree	1
+89	CLEVER°FRANKE	1
+90	D3.js	1
+91	Data Laboratory	1
+92	Datawrapper	1
+93	David Driver	1
+94	David Feng	1
+95	Diagram Visual Information	1
+96	Dianne Cook	1
+97	Eduard Imhof	1
+98	Ellis R Ott	1
+99	Eric Fisher	1
+100	Étienne-Jules Marey	1
+101	Eytan Adar	1
+102	Fernando Baptista	1
+103	FIELD.IO	1
+104	Fil	1
+105	Franck Lebeau	1
+106	Gapminder	1
+107	Gerd Arntz	1
+108	Golan Levin	1
+109	GOOD	1
+110	Gray Area	1
+111	Gregor Aisch	1
+112	Gurman Bhatia	1
+113	Helen Kennedy	1
+114	Interactive Things	1
+115	Irene Ros	1
+116	Jack van Wijk	1
+117	Jaime Serra	1
+118	Jean-Daniel Fekete	1
+119	Jim Hollan	1
+120	Joe Cheng	1
+121	Joe Lertola	1
+122	Johan Van Looveren	1
+123	John Snow	1
+124	John Tukey	1
+125	Jonathan Chomko	1
+126	Jonathan Corum	1
+127	José Luis de Vicente	1
+128	Josh On	1
+129	Juan Carlos Dürsteler	1
+130	Juan Francisco Saldarriaga	1
+131	Juan Velasco	1
+132	Kaiser Fung	1
+133	Karl Gude	1
+134	Katy Borner	1
+135	Kelly Martin	1
+136	Kevin Quealy	1
+137	Kim Albrecht	1
+138	Krist Wongsuphasawat	1
+139	Kyle Foreman	1
+140	Lazaro Gamio	1
+141	Lena Groeger	1
+142	Lev Manovich	1
+143	Logan Lossing	1
+144	LUST	1
+145	Lyon Playfair	1
+146	Maarten Lambrechts	1
+147	Maptime SF	1
+148	Marcos Weskamp	1
+149	Matt Miller	1
+150	Matthew Rosier	1
+151	MGMT.	1
+152	Michael Keller	1
+153	Miriah Meyer	1
+154	Muriel Cooper	1
+155	National Geographic	1
+156	Nicholas Rougeux	1
+157	Nikita Rokotyan	1
+158	Noah Veltman	1
+159	onformative	1
+160	Onlab	1
+161	Peltier Tech	1
+162	Peter Brookes	1
+163	Peter Crnokrak	1
+164	Peter Orntoft	1
+165	Peter Sullivan	1
+166	Piero Zagami	1
+167	Pieter Bruegel the Elder	1
+168	Post Graphics	1
+169	Quokka	1
+170	Ramana Rao	1
+171	Raúl Camañas	1
+172	RJ Andrews	1
+173	Robert Hodgin	1
+174	Robert McGill	1
+175	Rolf Hichert	1
+176	Russell Spangler	1
+177	Ryoji Ikeda	1
+178	Sandra Rendgen	1
+179	Sarah Slobin	1
+180	Sarah Williams	1
+181	Scott Murray	1
+182	Seb Lee-Delisle	1
+183	SEES Lab	1
+184	Shawn Allen	1
+185	Sonja Kuijpers	1
+186	Spatial Research	1
+187	Stephanie Evergreen	1
+188	Steve Duenes	1
+189	Stu Card	1
+190	Subramanian Anand	1
+191	Sven Ehmann	1
+192	Tableau	1
+193	Tanya Bibikova	1
+194	the Processing Foundation	1
+195	The Washington Post	1
+196	TheDesignersRepublic	1
+197	Thierry Galeuchet	1
+198	Tiziana Alocci	1
+199	Tomás Ondarra	1
+200	Usama Bilal	1
+201	Valentina D'Efilippo	1
+202	Vasco Asturiano	1
+203	Visions carto	1
+204	Visualized	1
+205	Wassily Kandinsky	1
+206	Wesley Grubs	1
+207	William S Cleveland	1
+208	Xoán G	1
+209	Yan Holtz	1
+210	Yugo Nakamura	1

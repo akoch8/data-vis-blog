@@ -1,0 +1,77 @@
+rank	name	count
+1	Ben Fry	6
+2	Martin Wattenberg	6
+3	Fernanda Viégas	5
+4	Aaron Koblin	4
+5	Edward Tufte	4
+6	Nicholas Felton	4
+7	Stamen Design	4
+8	Stefanie Posavec	4
+9	Andrew Vande Moere	3
+10	Andy Kirk	3
+11	Ben Schneiderman	3
+12	Hans Rosling	3
+13	Info Aesthetics	3
+14	Jer Thorp	3
+15	Jonathan Harris	3
+16	Moritz Stefaner	3
+17	accurat	2
+18	DensityDesign	2
+19	Giorgia Lupi	2
+20	Jeffrey Heer	2
+21	Jock Mackinlay	2
+22	John Maeda	2
+23	Joost Grootens	2
+24	Lisa Charlotte Rost	2
+25	Mona Chalabi	2
+26	Nadieh Bremer	2
+27	Nathan Yau	2
+28	Nigel Holmes	2
+29	Paolo Ciuccarelli	2
+30	Shirley Wu	2
+31	Albert-László Barabási	1
+32	Amit Pitaru	1
+33	Andy Cotgreave	1
+34	Archie Tse	1
+35	Bloomberg business week graphics desk	1
+36	Bloomberg Graphics	1
+37	D3.js	1
+38	Eric Fisher	1
+39	Étienne-Jules Marey	1
+40	Eytan Adar	1
+41	Florence Nightingale	1
+42	Francesco Franchi	1
+43	Golan Levin	1
+44	Gregor Aisch	1
+45	Helen Kennedy	1
+46	Ian Johnson	1
+47	Jason Davies	1
+48	John Burn-Murdoch	1
+49	John Grimwade	1
+50	Jonathan Corum	1
+51	Karsten Schmidt	1
+52	Kim Albrecht	1
+53	Lev Manovich	1
+54	Lisa Strausfeld	1
+55	Lyon Playfair	1
+56	Manuel Lima	1
+57	Marcos Weskamp	1
+58	Marius Watz	1
+59	Mark Hansen	1
+60	Michael Keller	1
+61	Mike Bostock	1
+62	Noah Veltman	1
+63	NYT Graphics	1
+64	Onlab	1
+65	Otto & Marie Neurath	1
+66	Peter Crnokrak	1
+67	Peter Orntoft	1
+68	Quokka	1
+69	Robert Kosara	1
+70	Santiago Ortiz	1
+71	Stephen Few	1
+72	Stu Card	1
+73	Sven Ehmann	1
+74	Thierry Galeuchet	1
+75	Vasco Asturiano	1
+76	Visions carto	1

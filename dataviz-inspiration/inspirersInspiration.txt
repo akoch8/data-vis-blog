@@ -1,0 +1,64 @@
+person	person_twitter	person_type	inspiration	inspiration_twitter	inspiration_type	person_count	inspiration_count
+Nathan Yau	@flowingdata	person - industry	Mark Hansen	@cocteau	person - academia	11	2
+Nathan Yau	@flowingdata	person - industry	Info Aesthetics	@infosthetics	studio	11	3
+Nathan Yau	@flowingdata	person - industry	Stamen Design	@stamen	studio	11	8
+Nathan Yau	@flowingdata	person - industry	Aaron Koblin	@aaronkoblin	person - industry	11	9
+Nathan Yau	@flowingdata	person - industry	Fernanda Viégas	@viegasf	person - industry	11	8
+Nathan Yau	@flowingdata	person - industry	Martin Wattenberg	@wattenberg	person - industry	11	8
+Nathan Yau	@flowingdata	person - industry	Jeffrey Heer	@jeffrey_heer	person - academia	11	4
+Nathan Yau	@flowingdata	person - industry	Ben Fry	@ben_fry	person - industry/academia	11	16
+Nathan Yau	@flowingdata	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	11	21
+Nathan Yau	@flowingdata	person - industry	NYT Graphics	@nytgraphics	news agency	11	6
+Enrico Bertini	@FILWD	person - academia	Ben Schneiderman	@benbendc	person - academia	3	7
+Enrico Bertini	@FILWD	person - academia	Stu Card	NA	person	3	1
+Enrico Bertini	@FILWD	person - academia	Jock Mackinlay	NA	person	3	2
+Enrico Bertini	@FILWD	person - academia	Ben Fry	@ben_fry	person - industry/academia	3	16
+Enrico Bertini	@FILWD	person - academia	Info Aesthetics	@infosthetics	studio	3	3
+Mike Bostock	@mbostock	person - industry	Jeffrey Heer	@jeffrey_heer	person - academia	16	4
+Mike Bostock	@mbostock	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	16	21
+Stefanie Posavec	@stefpos	person - industry	Fernanda Viégas	@viegasf	person - industry	7	8
+Stefanie Posavec	@stefpos	person - industry	Martin Wattenberg	@wattenberg	person - industry	7	8
+Lisa Charlotte Rost	@lisacrost	person - industry	Onlab	@onlab_berlin	studio	4	1
+Lisa Charlotte Rost	@lisacrost	person - industry	Sven Ehmann	@sven_ehmann	person	4	1
+Lisa Charlotte Rost	@lisacrost	person - industry	Francesco Franchi	@ffranchi	person - journalism/academia	4	3
+Lisa Charlotte Rost	@lisacrost	person - industry	Joost Grootens	NA	person	4	2
+Lisa Charlotte Rost	@lisacrost	person - industry	Bloomberg business week graphics desk	@bizweekgraphics	news agency	4	1
+Lisa Charlotte Rost	@lisacrost	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	4	21
+Moritz Stefaner	@moritz_stefaner	person - industry	Ben Fry	@ben_fry	person - industry/academia	14	16
+Moritz Stefaner	@moritz_stefaner	person - industry	Martin Wattenberg	@wattenberg	person - industry	14	8
+Moritz Stefaner	@moritz_stefaner	person - industry	Jonathan Harris	@jjhnumber27	person - industry/art	14	4
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Hans Rosling	@HansRosling	person - industry/academia	4	18
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Andy Cotgreave	@acotgreave	person - industry	4	1
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Gregor Aisch	@driven_by_data	person - industry	4	1
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Mona Chalabi	@MonaChalabi	person - industry	4	3
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Helen Kennedy	@hmtk	person - academia	4	1
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Andy Kirk	@visualisingdata	person - industry	4	12
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Lisa Charlotte Rost	@lisacrost	person - industry	4	4
+Manuel Lima	@mslima	person - industry	John Maeda	@johnmaeda	person - industry	7	3
+Manuel Lima	@mslima	person - industry	Ben Schneiderman	@benbendc	person - academia	7	7
+Manuel Lima	@mslima	person - industry	Albert-László Barabási	@barabasi	person - academia	7	1
+Manuel Lima	@mslima	person - industry	Ben Fry	@ben_fry	person - industry/academia	7	16
+Manuel Lima	@mslima	person - industry	Martin Wattenberg	@wattenberg	person - industry	7	8
+Manuel Lima	@mslima	person - industry	Fernanda Viégas	@viegasf	person - industry	7	8
+Manuel Lima	@mslima	person - industry	Jonathan Harris	@jjhnumber27	person - industry/art	7	4
+Manuel Lima	@mslima	person - industry	Lisa Strausfeld	@Strausfeld	person - industry/art	7	2
+Manuel Lima	@mslima	person - industry	Jonathan Corum	@13pt	person - journalism	7	1
+Manuel Lima	@mslima	person - industry	Marcos Weskamp	@marumushi	person - industry	7	1
+Manuel Lima	@mslima	person - industry	Golan Levin	@golan	person - academia/art	7	1
+Manuel Lima	@mslima	person - industry	Santiago Ortiz	@moebio	person - industry	7	4
+Manuel Lima	@mslima	person - industry	Nicholas Felton	@feltron	person - industry/art	7	11
+Manuel Lima	@mslima	person - industry	Karsten Schmidt	@toxi	person - industry	7	3
+Manuel Lima	@mslima	person - industry	Marius Watz	@mariuswatz	person - industry/art	7	3
+Manuel Lima	@mslima	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	7	14
+Manuel Lima	@mslima	person - industry	Jer Thorp	@blprnt	person - academia/art	7	10
+Manuel Lima	@mslima	person - industry	Aaron Koblin	@aaronkoblin	person - industry	7	9
+Manuel Lima	@mslima	person - industry	Eric Fisher	@enf	person - industry	7	1
+Manuel Lima	@mslima	person - industry	Eytan Adar	@eytanadar	person - academia	7	1
+Manuel Lima	@mslima	person - industry	DensityDesign	@densitydesign	academic research lab	7	7
+Manuel Lima	@mslima	person - industry	Andrew Vande Moere	@vdmoere	person - academia	7	3
+Manuel Lima	@mslima	person - industry	Info Aesthetics	@infosthetics	studio	7	3
+Karsten Schmidt	@toxi	person - industry	Andrew Vande Moere	@vdmoere	person - academia	3	3
+Alberto Cairo	@AlbertoCairo	person - academia	John Grimwade	@johngrimwade	person - industry	17	4
+Alberto Cairo	@AlbertoCairo	person - academia	Nigel Holmes	@nigelblue	person	17	5
+Stamen Design	@stamen	studio	Étienne-Jules Marey	NA	person - academia	8	1
+Stamen Design	@stamen	studio	Quokka	NA	studio	8	1

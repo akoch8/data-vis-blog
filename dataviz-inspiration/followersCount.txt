@@ -1,0 +1,178 @@
+inspiration	inspiration_twitter	followersCount	inspirationCount
+Paolo Ciuccarelli	@pciuccarelli	5311	4
+DensityDesign	@densitydesign	9534	7
+Mark Hansen	@cocteau	4955	2
+Info Aesthetics	@infosthetics	17776	3
+Stamen Design	@stamen	21847	8
+Aaron Koblin	@aaronkoblin	25980	9
+Fernanda Viégas	@viegasf	15675	8
+Martin Wattenberg	@wattenberg	15453	8
+Jeffrey Heer	@jeffrey_heer	11092	4
+Ben Fry	@ben_fry	21968	16
+Edward Tufte	@EdwardTufte	100069	21
+NYT Graphics	@nytgraphics	148962	6
+Ben Schneiderman	@benbendc	8215	7
+Giorgia Lupi	@giorgialupi	21119	6
+Stefanie Posavec	@stefpos	13059	7
+Nicholas Felton	@feltron	35301	11
+Andy Kirk	@visualisingdata	44747	12
+Nathan Yau	@flowingdata	79244	11
+Nadieh Bremer	@NadiehBremer	27225	19
+Shirley Wu	@sxywu	23588	7
+Moritz Stefaner	@moritz_stefaner	17357	14
+Hans Rosling	@HansRosling	350262	18
+Alberto Cairo	@AlbertoCairo	48615	17
+Federica Fragapane	@fedfragapane	5014	2
+Nigel Holmes	@nigelblue	1738	5
+Andrew Vande Moere	@vdmoere	486	3
+Jer Thorp	@blprnt	26774	10
+Robert Kosara	@eagereyes	21857	4
+Onlab	@onlab_berlin	231	1
+Sven Ehmann	@sven_ehmann	32	1
+Francesco Franchi	@ffranchi	10856	3
+Bloomberg business week graphics desk	@bizweekgraphics	4553	1
+Jonathan Harris	@jjhnumber27	6421	4
+Mike Bostock	@mbostock	59827	16
+Simon Rogers	@smfrogers	32337	2
+Manuel Lima	@mslima	12630	7
+Andy Cotgreave	@acotgreave	15541	1
+Gregor Aisch	@driven_by_data	18703	1
+Mona Chalabi	@MonaChalabi	63070	3
+Helen Kennedy	@hmtk	1240	1
+Lisa Charlotte Rost	@lisacrost	15969	4
+Sandra Rendgen	@srendgen	1998	1
+David McCandless	@infobeautiful	101777	5
+John Maeda	@johnmaeda	425078	3
+Albert-László Barabási	@barabasi	22398	1
+Lisa Strausfeld	@Strausfeld	1215	2
+Jonathan Corum	@13pt	6143	1
+Marcos Weskamp	@marumushi	4310	1
+Golan Levin	@golan	27577	1
+Santiago Ortiz	@moebio	9249	4
+Karsten Schmidt	@toxi	10861	3
+Marius Watz	@mariuswatz	13200	3
+Eric Fisher	@enf	12079	1
+Eytan Adar	@eytanadar	1901	1
+John Grimwade	@johngrimwade	1101	4
+CLEVER°FRANKE	@cleverfranke	2751	1
+Pitch Interactive	@pitchinc	1894	2
+Valentina D'Efilippo	@defilippovale	3674	1
+The Pudding	@puddingviz	21735	2
+FIELD.IO	@field_io	13827	1
+onformative	@onformative	6165	1
+Tamara Munzer	@tamaramunzner	5422	3
+Subramanian Anand	@sanand0	2587	1
+Jan Willem Tulp	@JanWillemTulp	12398	2
+Seb Lee-Delisle	@seb_ly	15372	1
+Robert Hodgin	@flight404	8981	1
+Casey Reas	@REAS	21214	3
+accurat	@accuratstudio	7538	7
+David Feng	@dyfbrain	140	1
+Jerome Cukier	@jcukier	8405	2
+Ian Johnson	@enjalot	6437	4
+Kim Rees	@krees	9742	2
+Wesley Grubs	@wesleygrubbs	6694	1
+Gray Area	@GrayAreaorg	24829	1
+Maptime SF	@MaptimeSF	1722	1
+Jack van Wijk	@jackvanwijk	123	1
+Nicholas Rougeux	@rougeux	3307	1
+Enrico Bertini	@FILWD	12176	3
+Visualized	@visualized	16075	1
+Jason Davies	@jasondavies	9139	2
+Bret Victor	@worrydream	51103	3
+Fil	@recifs	1776	1
+Franck Lebeau	@_Kcnarf	362	1
+Bruce Mau Design	@brucemaudesign	38646	1
+Ramana Rao	@treerao	1176	1
+TheDesignersRepublic	@disinfoTDR	2235	1
+Amy Franceschini	@amyfranceschini	1770	1
+Sarah Slobin	@sarahslo	3018	1
+Kirk Goldsberry	@kirkgoldsberry	67712	2
+Karl Gude	@karlgude	4519	1
+Michael Keller	@mhkeller	5818	1
+Amanda Cox	@amandacox	9921	3
+Irene Ros	@ireneros	5876	1
+National Geographic	@NatGeo	23380684	1
+Tableau	@tableau	139037	1
+Yugo Nakamura	@yugop	39181	1
+Joe Lertola	@jlert	43	1
+Bill Shander	@billshander	12910	1
+Cole Knafic	@storywithdata	18471	4
+Lazaro Gamio	@LazaroGamio	4784	1
+Post Graphics	@PostGraphics	51520	1
+Datawrapper	@Datawrapper	8678	1
+John Burn-Murdoch	@jburnmurdoch	32876	4
+Lena Groeger	@lenagroeger	10792	1
+GOOD	@good	880225	1
+Andy Kriebel	@VizWizBI	21396	2
+Kelly Martin	@VizCandy	3855	1
+Russell Spangler	@russellspangler	1263	1
+Hadley Wickham	@hadleywickham	94548	4
+Logan Lossing	@NagolGnissol	99	1
+Artur Galocha	@arturgalocha	3277	1
+Kevin Quealy	@KevinQ	10345	1
+Shan Carter	@shancarter	8260	2
+SEES Lab	@sees_lab	1286	1
+Adrian Holovaty	@adrianholovaty	18161	1
+Tanya Bibikova	@infotanka	2468	1
+Data Laboratory	@datalaboratory	624	1
+Krist Wongsuphasawat	@kristw	2956	1
+Bob Rudis	@hrbrmstr	11330	1
+RJ Andrews	@infowetrust	5826	1
+Usama Bilal	@usama_bilal	1509	1
+Laura Kurgan	@laurakurgan	2712	2
+Fernando Baptista	@fg_baptista	2505	1
+Jaime Serra	@ja_serra	4890	1
+Raúl Camañas	@raulcamanas	831	1
+Kyle Foreman	@kforeman	167	1
+Amit Pitaru	@pitaru	6909	1
+the Processing Foundation	@ProcessingOrg	29391	1
+Peltier Tech	@PeltierTech	2742	1
+Shawn Allen	@shawnbot	3861	1
+Archie Tse	@archietse	4713	2
+5W Infographics	@5Winfographics	1335	1
+Juan Velasco	@juanvelasco	3718	1
+Steve Duenes	@Duenes	6790	1
+Tony Chu	@tonyhschu	6265	2
+Sonja Kuijpers	@SonjaKuijpers	1718	1
+Scott Murray	@alignedleft	18764	1
+Matt Miller	@transmitclarity	360	1
+Kaiser Fung	@junkcharts	7126	1
+Visions carto	@visionscarto	7311	1
+Otto & Marie Neurath	@OMNeurath	441	2
+D3.js	@d3js_org	12616	1
+Noah Veltman	@veltman	6701	1
+Thierry Galeuchet	@recif	51	1
+Vasco Asturiano	@vastur	538	1
+calibro	@studiocalibro	681	1
+Gapminder	@Gapminder	65268	1
+José Luis de Vicente	@jldevicente	9537	1
+Kim Albrecht	@kimay	2598	1
+Bloomberg Graphics	@BBGVisualData	46646	1
+Jean-Daniel Fekete	@jdfaviz	1007	1
+The Washington Post	@washingtonpost	14265865	1
+Yan Holtz	@R_Graph_Gallery	4834	1
+Joe Cheng	@jcheng	9831	1
+Dianne Cook	@visnut	4944	1
+bestiario_	@bestiario140	2499	2
+Maarten Lambrechts	@maartenzam	13587	1
+Ryoji Ikeda	@ryojiikeda	17059	1
+LUST	@LUSTnl	3128	1
+Juan Francisco Saldarriaga	@juanfrans	441	1
+Spatial Research	@c4sr_columbia	1671	1
+Sarah Williams	@datasew	1573	1
+Gurman Bhatia	@GurmanBhatia	3513	1
+Interactive Things	@IXT	2711	1
+Tiziana Alocci	@Altiziana	1881	1
+Piero Zagami	@pierozagami	919	1
+Stephanie Evergreen	@evergreendata	10354	1
+Nikita Rokotyan	@Ernaem	325	1
+Katy Borner	@katycns	2005	1
+Miriah Meyer	@miriah_meyer	1043	1
+Bang Wong	@bangwong	1103	1
+Tomás Ondarra	@TomasOndarra	2005	1
+MGMT.	@mgmtdesign	1285	1
+Jim Hollan	@ProfHollan	298	1
+Jonathan Chomko	@jtchomko	295	1
+Matthew Rosier	@mattrosier	311	1
+Rolf Hichert	@RolfHichert	380	1

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Who's watching who</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: #fefefe;
+			color: #3f3f3f;
+			font: 12px/1.5 Arial, sans-serif;
+			font-weight: 400;
+			margin: 0;
+			width: 100%;
+		}
+		main {
+			margin: 0 auto;
+			max-width: 960px;
+			width: 100%;
+		}
+		section {
+			margin: 1rem auto;
+			width: 100%;
+		}
+		svg {
+			display: block;
+			margin: 0 auto;
+		}
+		svg:hover {
+			cursor: move;
+		}
+		.person-name, .important-person-name {
+			fill: #3f3f3f;
+			font-size: 0.9rem;
+			font-weight: bold;
+			text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+		}
+		.person-twitter {
+			fill: #3f3f3f;
+			font-size: 0.8rem;
+			font-style: italic;
+			font-weight: normal;
+			text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+		}
+		.person-name-linked {
+			fill: #6f6f6f;
+			font-size: 0.6rem;
+			font-style: italic;
+		}
+		.nodes:hover {
+			cursor: pointer;
+		}
+		.figure-container {
+			text-align: center;
+			width: 100%;
+		}
+		figure {
+			border: 1px solid #cfcfcf;
+			display: inline-block;
+			position: relative;
+		}
+		.inspiration-count, .luminary-count {
+			max-height: 80vh;
+			overflow: hidden;
+			position: relative;
+		}
+		.show-all {
+			max-height: none;
+			overflow: visible;
+		}
+		ul {
+			list-style: none;
+		}
+		li {
+			margin: 0.5rem 0;
+		}
+		.legend {
+			background: #fefefe;
+			left: 0;
+			padding: 0 0.5rem;
+			position: absolute;
+			text-align: left;
+			top: 0;
+		}
+		.legend-circle {
+			background: #ccc;
+			border-radius: 5px;
+			display: inline-block;
+			height: 10px;
+			margin: 0 0.25rem;
+			vertical-align: middle;
+			width: 10px;
+		}
+		.inspired-by {
+			background: #d95f02;
+		}
+		.inspiration-for {
+			background: #7570b3;
+		}
+		.small-circle {
+			background: #d1eeea;
+			border-radius: 2px;
+			height: 4px;
+			vertical-align: middle;
+			width: 4px;
+		}
+		.large-circle {
+			background: #2a5674;
+			border-radius: 10px;
+			height: 20px;
+			vertical-align: middle;
+			width: 20px;
+		}
+		.inset-shadow-bottom {
+			bottom: 0;
+			box-shadow: inset 0 -100px 40px -40px #fefefe;
+			display: flex;
+			height: 100px;
+			left: 0;
+			position: absolute;
+			right: 0;
+		}
+		.no-shadow {
+			box-shadow: none;
+		}
+		button {
+			background: none;
+			border: none;
+			color: inherit;
+			cursor: pointer;
+			font: inherit;
+			outline: inherit;
+			padding: 0;
+		}
+		button:hover {
+			cursor: pointer;
+		}
+		button:active {
+			background: #ddd;
+		}
+		.show-more-less {
+			align-self: flex-end;
+			background: #eee;
+			display: inline-block;
+			margin: 0.5rem auto;
+			padding: 0.25rem 1rem;
+			user-select: none;
+		}
+		.hidden {
+			display: none;
+		}
+		.invisible {
+			visibility: hidden;
+			white-space: nowrap;
+		}
+		.barplot-name {
+			alignment-baseline: middle;
+			fill: #3f3f3f;
+			text-anchor: end;
+		}
+		.barplot-rank {
+			alignment-baseline: middle;
+			fill: #9f9f9f;
+			text-anchor: start;
+		}
+		.barplot-rank-line {
+			stroke: #9f9f9f;
+			stroke-dasharray: 1,2;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<section>
+			<div class="figure-container">
+				<figure class="inspiration-count">
+					<div class="inset-shadow-bottom">
+						<button class="show-more-less inspiration">Show all</button>
+						<button class="show-more-less inspiration hidden">Show less</button>
+					</div>
+				</figure>
+			</div>
+		</section>
+		<section>
+			<div class="figure-container">
+				<figure class="luminary-count">
+					<div class="inset-shadow-bottom">
+						<button class="show-more-less luminary">Show all</button>
+						<button class="show-more-less luminary hidden">Show less</button>
+					</div>
+				</figure>
+			</div>
+		</section>
+		<section>
+			<div class="figure-container">
+				<figure id="network-graph">
+					<div class="legend">
+						<ul>
+							<li>Inspired<span class="legend-circle small-circle"></span>0 &nbsp;&rarr; <span class="legend-circle large-circle"></span>21 people</li>
+							<li>Inspired by<span class="legend-circle inspired-by"></span></li>
+							<li>Inspiration for<span class="legend-circle inspiration-for"></span></li>
+						</ul>
+					</div>
+				</figure>
+			</div>
+		</section>
+		<span class="invisible" id="ruler"></span>
+	</main>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="d3.v4.min.js"></script>
+	<script>
+		function measureLength(text) {
+			var ruler = $('#ruler');
+			ruler.text(text);
+			return ruler.outerWidth();
+		}
+
+		// Inspiration count barplot
+		d3.tsv('inspirationCount.txt', function(error, data) {
+			if (error) throw error;
+			
+			var margin = {top: 20, left: 200, bottom: 100, right: 50};
+			var width = $(window).height() - margin.left - margin.right;
+			var barHeight = 8;
+			var barSep = 8;
+			var height = (barHeight + 2 * barSep) * data.length - margin.top - margin.bottom;
+			var svg = d3.select('.inspiration-count')
+				.append('svg')
+				.attr('width', width + margin.left + margin.right)
+				.attr('height', height + margin.top + margin.bottom)
+				.append('g')
+				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+			var x = d3.scaleLinear()
+				.domain([0, 21])
+				.range([0, width]);
+			var y = d3.scaleLinear()
+				.domain([0, data.length])
+				.range([0, height]);
+			var color = d3.scaleLinear()
+				.domain([0, 21])
+				.range(['#d1eeea', '#2a5674']);
+			svg.selectAll('bar')
+				.data(data)
+				.enter()
+				.append('rect')
+					.attr('x', x(0))
+					.attr('y', function(d) { return y(+d.rank); })
+					.attr('width', function(d) { return x(+d.count); })
+					.attr('height', barHeight)
+					.attr('fill', function(d) { return color(+d.count); });
+			
+			// Add the names.
+			svg.selectAll('bar')
+				.data(data)
+				.enter()
+				.append('text')
+					.attr('x', -10)
+					.attr('y', function(d) { return y(+d.rank) + barHeight / 2; })
+					.attr('class', 'barplot-name')
+					.text(function(d) {
+						var name = d.name;
+						if (name.length > 23) {
+							name = name.substr(0, 23) + '...';
+						}
+						if (+d.rank === 1) {
+							name = name + ' 🥇';
+						}
+						if (+d.rank === 2) {
+							name = name + ' 🥈';
+						}
+						if (+d.rank === 3) {
+							name = name + ' 🥉';
+						}
+						return name;
+					})
+					.on('click', function(d) {
+						twitterURL = 'https://twitter.com/' + d.twitter.replace('@', '');
+						if (twitterURL) window.open(twitterURL);
+					});
+			
+			// Add the count values.
+			svg.selectAll('bar')
+				.data(data)
+				.enter()
+				.append('text')
+					.attr('x', function(d) { return x(+d.count) + 10; })
+					.attr('y', function(d) { return y(+d.rank) + barHeight / 2; })
+					.attr('text-anchor', 'start')
+					.attr('alignment-baseline', 'middle')
+					.attr('fill', '#3f3f3f')
+					.text(function(d) { return d.count; });
+
+			// Add the rank.
+			for (var i = 1; i <= (data.length + 1); i++) {
+				if (i === 1 || i % 10 === 0) {
+					var yPos = y(i) + barHeight / 2;
+					var rankWidth = measureLength(i);
+					var nameWidth = measureLength(data[i - 1].name);
+					if (i === 1) nameWidth += 20; // Add some space for the medal emoji.
+					svg.append('text')
+						.attr('x', -margin.left + 10)
+						.attr('y', yPos)
+						.attr('class', 'barplot-rank')
+						.text(i);
+					svg.append('line')
+						.attr('x1', -margin.left + 10 + rankWidth + 5)
+						.attr('x2', -10 - nameWidth - 5)
+						.attr('y1', yPos)
+						.attr('y2', yPos)
+						.attr('class', 'barplot-rank-line');
+				}
+			}
+		});
+		$('button.show-more-less.inspiration').on('click', function() {
+			$('.inspiration-count').toggleClass('show-all');
+			$(this).closest('.inset-shadow-bottom').toggleClass('no-shadow');
+			$(this).closest('.inset-shadow-bottom').find('.show-more-less').toggleClass('hidden');
+		});
+
+		// Luminary count barplot
+		d3.tsv('luminaryCount.txt', function(error, data) {
+			if (error) throw error;
+			
+			var margin = {top: 20, left: 200, bottom: 100, right: 50};
+			var width = $(window).height() - margin.left - margin.right;
+			var barHeight = 8;
+			var barSep = 8;
+			var height = (barHeight + 2 * barSep) * data.length - margin.top - margin.bottom;
+			var svg = d3.select('.luminary-count')
+				.append('svg')
+				.attr('width', width + margin.left + margin.right)
+				.attr('height', height + margin.top + margin.bottom)
+				.append('g')
+				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+			var x = d3.scaleLinear()
+				.domain([0, 21])
+				.range([0, width]);
+			var y = d3.scaleLinear()
+				.domain([0, data.length])
+				.range([0, height]);
+			var color = d3.scaleLinear()
+				.domain([0, 21])
+				.range(['#d1eeea', '#2a5674']);
+			svg.selectAll('bar')
+				.data(data)
+				.enter()
+				.append('rect')
+					.attr('x', x(0))
+					.attr('y', function(d) { return y(+d.rank); })
+					.attr('width', function(d) { return x(+d.count); })
+					.attr('height', barHeight)
+					.attr('fill', function(d) { return color(+d.count); });
+			
+			// Add the names.
+			svg.selectAll('bar')
+				.data(data)
+				.enter()
+				.append('text')
+					.attr('x', -10)
+					.attr('y', function(d) { return y(+d.rank) + barHeight / 2; })
+					.attr('class', 'barplot-name')
+					.text(function(d) {
+						var name = d.name;
+						if (name.length > 23) {
+							name = name.substr(0, 23) + '...';
+						}
+						if (+d.rank === 1) {
+							name = name + ' 🥇';
+						}
+						if (+d.rank === 2) {
+							name = name + ' 🥈';
+						}
+						if (+d.rank === 3) {
+							name = name + ' 🥉';
+						}
+						return name;
+					})
+					.on('click', function(d) {
+						twitterURL = 'https://twitter.com/' + d.twitter.replace('@', '');
+						if (twitterURL) window.open(twitterURL);
+					});
+			
+			// Add the count values.
+			svg.selectAll('bar')
+				.data(data)
+				.enter()
+				.append('text')
+					.attr('x', function(d) { return x(+d.count) + 10; })
+					.attr('y', function(d) { return y(+d.rank) + barHeight / 2; })
+					.attr('text-anchor', 'start')
+					.attr('alignment-baseline', 'middle')
+					.attr('fill', '#3f3f3f')
+					.text(function(d) { return d.count; });
+
+			// Add the rank.
+			for (var i = 1; i <= (data.length + 1); i++) {
+				if (i === 1 || i % 10 === 0) {
+					var yPos = y(i) + barHeight / 2;
+					var rankWidth = measureLength(i);
+					var nameWidth = measureLength(data[i - 1].name);
+					if (i === 1) nameWidth += 20; // Add some space for the medal emoji.
+					svg.append('text')
+						.attr('x', -margin.left + 10)
+						.attr('y', yPos)
+						.attr('class', 'barplot-rank')
+						.text(i);
+					svg.append('line')
+						.attr('x1', -margin.left + 10 + rankWidth + 5)
+						.attr('x2', -10 - nameWidth - 5)
+						.attr('y1', yPos)
+						.attr('y2', yPos)
+						.attr('class', 'barplot-rank-line');
+				}
+			}
+		});
+		$('button.show-more-less.luminary').on('click', function() {
+			$('.luminary-count').toggleClass('show-all');
+			$(this).closest('.inset-shadow-bottom').toggleClass('no-shadow');
+			$(this).closest('.inset-shadow-bottom').find('.show-more-less').toggleClass('hidden');
+		});
+
+		// Inspiration network graph
+		d3.json("inspirationNetwork.json", function(error, graph) {
+			if (error) throw error;
+
+			var height = $(window).height();
+			var width = height;
+			var linkColor = 'rgba(200, 200, 200, 0.75)';
+			var selectedColor = '#ffe241';
+			var svg = d3.select('#network-graph')
+				.append('svg')
+				.attr('width', width)
+				.attr('height', height)
+				.call(d3.zoom().on('zoom', function() {
+					svg.attr('transform', d3.event.transform);
+				}))
+				.append('g');
+			//var colorGroup = d3.scaleOrdinal(d3.schemeCategory20);
+			var color = d3.scaleLinear()
+				.domain([0, 21])
+				.range(['#d1eeea', '#2a5674']);
+			var simulation = d3.forceSimulation()
+				.force("link", d3.forceLink().id(function(d) { return d.id; }).distance(10))
+				.force("charge", d3.forceManyBody().strength(-50).distanceMax(120))
+				.force("center", d3.forceCenter(width / 2, height / 2));
+			var link = svg.append("g")
+				.attr("class", "links")
+				.selectAll("line")
+				.data(graph.links)
+				.enter().append("line")
+				.attr("stroke", linkColor)
+				.attr("stroke-width", 0.5);
+			var node = svg.append("g")
+				.attr("class", "nodes")
+				.selectAll("g")
+				.data(graph.nodes)
+				.enter().append("g");
+			var circles = node.append("circle")
+				.attr("r", function(d) { return d.inspiration_count / 2 + 3; })
+				//.attr("r", 3)
+				//.attr("fill", function(d) { return colorGroup(d.group); })
+				.attr("fill", function(d) { return color(+d.inspiration_count); })
+				.attr('stroke', '#ffffff')
+				.attr('stroke-width', 1)
+				//.call(d3.drag()
+				//	.on("start", dragstarted)
+				//	.on("drag", dragged)
+				//	.on("end", dragended))
+				.on('mouseover', function(d) {
+					$('.person-name').remove();
+					$('person-name-linked').remove();
+					circles.style('fill', function(o) {
+						//return neighboring(d, o) || neighboring(o, d) ? selectedColor : color(+o.inspiration_count);
+						if (d === o) {
+							return selectedColor;
+						} else if (neighboring(d, o) || neighboring(o, d)) {
+							// Is d the source or the target?
+							var dIsSource = graph.links.some(function(l) {
+								return (l.source.id === d.id && l.target.id === o.id);
+							});
+							if (dIsSource) {
+								return '#d95f02';
+							} else {
+								return '#7570b3';
+							}
+						}
+					});
+					link.style('stroke', function(o) {
+						return o.source === d || o.target === d ? '#1f1f1f' : linkColor;
+					});
+					svg.append('text')
+						.attr('x', d.x + d3.select(this).attr('r') / 2 + 3)
+						.attr('y', d.y - d3.select(this).attr('r') / 2 - 20)
+						.attr('class', 'person-name')
+						.text(d.name);
+					svg.append('text')
+						.attr('x', d.x + d3.select(this).attr('r') / 2)
+						.attr('y', d.y - d3.select(this).attr('r') / 2 - 4)
+						.attr('class', 'person-name person-twitter')
+						.text(d.twitter);
+				})
+				.on('mouseout', function() {
+					$('.person-name').remove();
+					$('.person-name-linked').remove();
+					circles.style('fill', function(o) { return color(+o.inspiration_count); });
+					link.style('stroke', linkColor);
+					//d3.select(this).attr('fill', function(d) { return colorGroup(d.group); });
+				})
+				.on('click', function(d) {
+					twitterURL = 'https://twitter.com/' + d.twitter.replace('@', '');
+					if (twitterURL) window.open(twitterURL);
+				});
+			simulation
+				.nodes(graph.nodes)
+				.on("tick", ticked);
+			simulation.force("link")
+				.links(graph.links);
+
+			function ticked() {
+				link
+					.attr("x1", function(d) { return d.source.x; })
+					.attr("y1", function(d) { return d.source.y; })
+					.attr("x2", function(d) { return d.target.x; })
+					.attr("y2", function(d) { return d.target.y; });
+				node
+					.attr("transform", function(d) {
+						return "translate(" + d.x + "," + d.y + ")";
+					});
+			}
+
+			function neighboring(a, b) {
+				if (a === b) {
+					return true;
+				} else {
+					return graph.links.some(function(d) {
+						return (d.source === a && d.target === b) || (d.source === b && d.target === a);
+					});
+				}
+			}
+		});
+
+		/* Graph node drag functionality
+		function dragstarted(d) {
+			if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+			d.fx = d.x;
+			d.fy = d.y;
+		}
+
+		function dragged(d) {
+			d.fx = d3.event.x;
+			d.fy = d3.event.y;
+		}
+
+		function dragended(d) {
+			if (!d3.event.active) simulation.alphaTarget(0);
+			d.fx = null;
+			d.fy = null;
+		}*/
+	</script>
+</body>
+</html>

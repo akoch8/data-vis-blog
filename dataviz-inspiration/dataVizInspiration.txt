@@ -1,0 +1,539 @@
+person	person_twitter	person_type	inspiration	inspiration_twitter	inspiration_type	person_gender	inspiration_gender
+Giovanni Magni	@P_Maravich	person - industry	Paolo Ciuccarelli	@pciuccarelli	person - academia	m	m
+Giovanni Magni	@P_Maravich	person - industry	DensityDesign	@densitydesign	academic research lab	m	NA
+Giovanni Magni	@P_Maravich	person - industry	Johan Van Looveren	NA	person - academia	m	m
+Nathan Yau	@flowingdata	person - industry	Mark Hansen	@cocteau	person - academia	m	m
+Nathan Yau	@flowingdata	person - industry	Info Aesthetics	@infosthetics	studio	m	NA
+Nathan Yau	@flowingdata	person - industry	Stamen Design	@stamen	studio	m	NA
+Nathan Yau	@flowingdata	person - industry	Aaron Koblin	@aaronkoblin	person - industry	m	m
+Nathan Yau	@flowingdata	person - industry	Fernanda Viégas	@viegasf	person - industry	m	f
+Nathan Yau	@flowingdata	person - industry	Martin Wattenberg	@wattenberg	person - industry	m	m
+Nathan Yau	@flowingdata	person - industry	Jeffrey Heer	@jeffrey_heer	person - academia	m	m
+Nathan Yau	@flowingdata	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Nathan Yau	@flowingdata	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Nathan Yau	@flowingdata	person - industry	NYT Graphics	@nytgraphics	news agency	m	NA
+Enrico Bertini	@FILWD	person - academia	Ben Schneiderman	@benbendc	person - academia	m	m
+Enrico Bertini	@FILWD	person - academia	Stu Card	NA	person	m	m
+Enrico Bertini	@FILWD	person - academia	Jock Mackinlay	NA	person	m	m
+Enrico Bertini	@FILWD	person - academia	Ben Fry	@ben_fry	person - industry/academia	m	m
+Enrico Bertini	@FILWD	person - academia	Info Aesthetics	@infosthetics	studio	m	NA
+Federica Fragapane	@fedfragapane	person - industry	Paolo Ciuccarelli	@pciuccarelli	person - academia	f	m
+Federica Fragapane	@fedfragapane	person - industry	Giorgia Lupi	@giorgialupi	person - industry	f	f
+Federica Fragapane	@fedfragapane	person - industry	Stefanie Posavec	@stefpos	person - industry	f	f
+Federica Fragapane	@fedfragapane	person - industry	Nicholas Felton	@feltron	person - industry/art	f	m
+Elijah Meeks	@Elijah_Meeks	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Mike Bostock	@mbostock	person - industry	Jeffrey Heer	@jeffrey_heer	person - academia	m	m
+Mike Bostock	@mbostock	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Nicholas Rougeux	@rougeux	person - industry/art	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Nicholas Rougeux	@rougeux	person - industry/art	Giorgia Lupi	@giorgialupi	person - industry	m	f
+Nicholas Rougeux	@rougeux	person - industry/art	Stefanie Posavec	@stefpos	person - industry	m	f
+Nicholas Rougeux	@rougeux	person - industry/art	Andy Kirk	@visualisingdata	person - industry	m	m
+Nicholas Rougeux	@rougeux	person - industry/art	Nathan Yau	@flowingdata	person - industry	m	m
+Nicholas Rougeux	@rougeux	person - industry/art	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Nicholas Rougeux	@rougeux	person - industry/art	Shirley Wu	@sxywu	person - industry	m	f
+Nicholas Rougeux	@rougeux	person - industry/art	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Emilie L. Dubois	@IMPAKTsci	person - academia	Hans Rosling	@HansRosling	person - industry/academia	f	m
+Emilie L. Dubois	@IMPAKTsci	person - academia	Alberto Cairo	@AlbertoCairo	person - academia	f	m
+Emilie L. Dubois	@IMPAKTsci	person - academia	Federica Fragapane	@fedfragapane	person - industry	f	f
+Kim Rees	@krees	person - industry	Ben Fry	@ben_fry	person - industry/academia	f	m
+Kim Rees	@krees	person - industry	Stamen Design	@stamen	studio	f	NA
+Kim Rees	@krees	person - industry	Nigel Holmes	@nigelblue	person	f	m
+Kim Rees	@krees	person - industry	Andrew Vande Moere	@vdmoere	person - academia	f	m
+Kim Rees	@krees	person - industry	Nathan Yau	@flowingdata	person - industry	f	m
+Kim Rees	@krees	person - industry	Lyon Playfair	NA	person	f	m
+Kim Rees	@krees	person - industry	Florence Nightingale	NA	person - medicine	f	f
+Kim Rees	@krees	person - industry	Jock Mackinlay	NA	person	f	m
+Jan Willem Tulp	@JanWillemTulp	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Jan Willem Tulp	@JanWillemTulp	person - industry	Jer Thorp	@blprnt	person - academia/art	m	m
+Jan Willem Tulp	@JanWillemTulp	person - industry	Stamen Design	@stamen	studio	m	NA
+Jerome Cukier	@jcukier	person - industry	Fernanda Viégas	@viegasf	person - industry	m	f
+Jerome Cukier	@jcukier	person - industry	Martin Wattenberg	@wattenberg	person - industry	m	m
+Jerome Cukier	@jcukier	person - industry	Robert Kosara	@eagereyes	person - industry	m	m
+Jerome Cukier	@jcukier	person - industry	Ben Schneiderman	@benbendc	person - academia	m	m
+Jerome Cukier	@jcukier	person - industry	Stefanie Posavec	@stefpos	person - industry	m	f
+Jerome Cukier	@jcukier	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Jerome Cukier	@jcukier	person - industry	Stephen Few	NA	person - industry	m	m
+Stefanie Posavec	@stefpos	person - industry	Fernanda Viégas	@viegasf	person - industry	f	f
+Stefanie Posavec	@stefpos	person - industry	Martin Wattenberg	@wattenberg	person - industry	f	m
+Lisa Charlotte Rost	@lisacrost	person - industry	Onlab	@onlab_berlin	studio	f	NA
+Lisa Charlotte Rost	@lisacrost	person - industry	Sven Ehmann	@sven_ehmann	person	f	m
+Lisa Charlotte Rost	@lisacrost	person - industry	Francesco Franchi	@ffranchi	person - journalism/academia	f	m
+Lisa Charlotte Rost	@lisacrost	person - industry	Joost Grootens	NA	person	f	m
+Lisa Charlotte Rost	@lisacrost	person - industry	Bloomberg business week graphics desk	@bizweekgraphics	news agency	f	NA
+Lisa Charlotte Rost	@lisacrost	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	f	m
+Moritz Stefaner	@moritz_stefaner	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Moritz Stefaner	@moritz_stefaner	person - industry	Martin Wattenberg	@wattenberg	person - industry	m	m
+Moritz Stefaner	@moritz_stefaner	person - industry	Jonathan Harris	@jjhnumber27	person - industry/art	m	m
+Jill Hubley	@Jill_hubley	person - industry	Mike Bostock	@mbostock	person - industry	f	m
+GraphicHunters	@GraphicHunters	studio	Simon Rogers	@smfrogers	person - industry	NA	m
+GraphicHunters	@GraphicHunters	studio	Manuel Lima	@mslima	person - industry	NA	m
+GraphicHunters	@GraphicHunters	studio	Andy Kirk	@visualisingdata	person - industry	NA	m
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Hans Rosling	@HansRosling	person - industry/academia	m	m
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Andy Cotgreave	@acotgreave	person - industry	m	m
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Gregor Aisch	@driven_by_data	person - industry	m	m
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Mona Chalabi	@MonaChalabi	person - industry	m	f
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Helen Kennedy	@hmtk	person - academia	m	f
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Andy Kirk	@visualisingdata	person - industry	m	m
+John Burn-Murdoch	@jburnmurdoch	person - journalism	Lisa Charlotte Rost	@lisacrost	person - industry	m	f
+Timo Franz	@tmfrnz	person - nonprofit	Andy Kirk	@visualisingdata	person - industry	m	m
+Timo Franz	@tmfrnz	person - nonprofit	Nathan Yau	@flowingdata	person - industry	m	m
+Timo Franz	@tmfrnz	person - nonprofit	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Timo Franz	@tmfrnz	person - nonprofit	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Timo Franz	@tmfrnz	person - nonprofit	Francesco Franchi	@ffranchi	person - journalism/academia	m	m
+Timo Franz	@tmfrnz	person - nonprofit	Otto Neurath	NA	person - academia	m	m
+Timo Franz	@tmfrnz	person - nonprofit	Sandra Rendgen	@srendgen	person - industry	m	f
+Valentina D'Efilippo	@defilippovale	person - industry	Jonathan Harris	@jjhnumber27	person - industry/art	f	m
+Valentina D'Efilippo	@defilippovale	person - industry	Fernanda Viégas	@viegasf	person - industry	f	f
+Valentina D'Efilippo	@defilippovale	person - industry	Martin Wattenberg	@wattenberg	person - industry	f	m
+Valentina D'Efilippo	@defilippovale	person - industry	Aaron Koblin	@aaronkoblin	person - industry/art	f	m
+Valentina D'Efilippo	@defilippovale	person - industry	Manuel Lima	@mslima	person - industry	f	m
+Frans Geurts	@Frans_geurts	person - industry	Andy Kirk	@visualisingdata	person - industry	m	m
+Frans Geurts	@Frans_geurts	person - industry	David McCandless	@infobeautiful	person - industry/art	m	m
+Frans Geurts	@Frans_geurts	person - industry	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Frans Geurts	@Frans_geurts	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Manuel Lima	@mslima	person - industry	John Maeda	@johnmaeda	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Ben Schneiderman	@benbendc	person - academia	m	m
+Manuel Lima	@mslima	person - industry	Albert-László Barabási	@barabasi	person - academia	m	m
+Manuel Lima	@mslima	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Manuel Lima	@mslima	person - industry	Martin Wattenberg	@wattenberg	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Fernanda Viégas	@viegasf	person - industry	m	f
+Manuel Lima	@mslima	person - industry	Jonathan Harris	@jjhnumber27	person - industry/art	m	m
+Manuel Lima	@mslima	person - industry	Lisa Strausfeld	@Strausfeld	person - industry/art	m	f
+Manuel Lima	@mslima	person - industry	Jonathan Corum	@13pt	person - journalism	m	m
+Manuel Lima	@mslima	person - industry	Marcos Weskamp	@marumushi	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Golan Levin	@golan	person - academia/art	m	m
+Manuel Lima	@mslima	person - industry	Santiago Ortiz	@moebio	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Manuel Lima	@mslima	person - industry	Karsten Schmidt	@toxi	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Marius Watz	@mariuswatz	person - industry/art	m	m
+Manuel Lima	@mslima	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Jer Thorp	@blprnt	person - academia/art	m	m
+Manuel Lima	@mslima	person - industry	Aaron Koblin	@aaronkoblin	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Eric Fisher	@enf	person - industry	m	m
+Manuel Lima	@mslima	person - industry	Eytan Adar	@eytanadar	person - academia	m	m
+Manuel Lima	@mslima	person - industry	DensityDesign	@densitydesign	academic research lab	m	NA
+Manuel Lima	@mslima	person - industry	Andrew Vande Moere	@vdmoere	person - academia	m	m
+Manuel Lima	@mslima	person - industry	Info Aesthetics	@infosthetics	studio	m	NA
+Karsten Schmidt	@toxi	person - industry	Andrew Vande Moere	@vdmoere	person - academia	m	m
+Alberto Cairo	@AlbertoCairo	person - academia	John Grimwade	@johngrimwade	person - industry	m	m
+Alberto Cairo	@AlbertoCairo	person - academia	Nigel Holmes	@nigelblue	person	m	m
+Ben Jones	@DataRemixed	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Ben Jones	@DataRemixed	person - industry	Stephen Few	NA	person - industry	m	m
+Ben Jones	@DataRemixed	person - industry	Andy Kirk	@visualisingdata	person - industry	m	m
+Ben Jones	@DataRemixed	person - industry	Nathan Yau	@flowingdata	person - industry	m	m
+dr ord	@ordiology	person	Andy Kirk	@visualisingdata	person - industry	m	m
+dr ord	@ordiology	person	Nathan Yau	@flowingdata	person - industry	m	m
+dr ord	@ordiology	person	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+dr ord	@ordiology	person	Shirley Wu	@sxywu	person - industry	m	f
+dr ord	@ordiology	person	Lisa Charlotte Rost	@lisacrost	person - industry	m	f
+encode	@encode_info	conference	CLEVER°FRANKE	@cleverfranke	studio	NA	NA
+encode	@encode_info	conference	Pitch Interactive	@pitchinc	studio	NA	NA
+encode	@encode_info	conference	Stefanie Posavec	@stefpos	person - industry	NA	f
+encode	@encode_info	conference	Valentina D'Efilippo	@defilippovale	person - industry	NA	f
+encode	@encode_info	conference	Andy Kirk	@visualisingdata	person - industry	NA	m
+encode	@encode_info	conference	The Pudding	@puddingviz	studio	NA	NA
+encode	@encode_info	conference	FIELD.IO	@field_io	studio	NA	NA
+encode	@encode_info	conference	onformative	@onformative	studio	NA	NA
+Ben de Jong	@cleardataviz	person - industry	Andy Kirk	@visualisingdata	person - industry	m	m
+Ben de Jong	@cleardataviz	person - industry	Stephen Few	NA	person - industry	m	m
+Jorge Camoes	@wisevis	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Jorge Camoes	@wisevis	person - industry	Jaques Bertin	NA	person	m	m
+Jorge Camoes	@wisevis	person - industry	Stephen Few	NA	person - industry	m	m
+Tom Carden	@RandomEtc	person - industry	Stamen Design	@stamen	studio	m	NA
+Tom Carden	@RandomEtc	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Tom Carden	@RandomEtc	person - industry	Martin Wattenberg	@wattenberg	person - industry	m	m
+Tom Carden	@RandomEtc	person - industry	Fernanda Viégas	@viegasf	person - industry	m	f
+Tom Carden	@RandomEtc	person - industry	Tamara Munzer	@tamaramunzner	person - academia	m	f
+Jane Zhang	@janezhgw	person - industry	David McCandless	@infobeautiful	person - industry/art	m	m
+Jane Zhang	@janezhgw	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Jane Zhang	@janezhgw	person - industry	Mona Chalabi	@MonaChalabi	person - industry	m	f
+Richie Lionell	@richielionell	person	Subramanian Anand	@sanand0	person - industry	m	m
+Richie Lionell	@richielionell	person	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Richie Lionell	@richielionell	person	NYT Graphics	@nytgraphics	news agency	m	NA
+Mickael	@mickaelmarchese	person - industry	Jan Willem Tulp	@JanWillemTulp	person - industry	m	m
+Matt DesLauriers	@mattdesl	person - industry/art	Seb Lee-Delisle	@seb_ly	person - art	m	m
+Matt DesLauriers	@mattdesl	person - industry/art	Robert Hodgin	@flight404	person	m	m
+Matt DesLauriers	@mattdesl	person - industry/art	Marius Watz	@mariuswatz	person - industry/art	m	m
+Matt DesLauriers	@mattdesl	person - industry/art	Casey Reas	@REAS	person - industry	m	m
+Will Chase	@W_R_Chase	person - academia	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Will Chase	@W_R_Chase	person - academia	Shirley Wu	@sxywu	person - industry	m	f
+Will Chase	@W_R_Chase	person - academia	Federica Fragapane	@fedfragapane	person - industry	m	f
+Will Chase	@W_R_Chase	person - academia	accurat	@accuratstudio	studio	m	NA
+Will Chase	@W_R_Chase	person - academia	The Pudding	@puddingviz	studio	m	NA
+Saskia de Vries	@sejdevries	person - academia	David Feng	@dyfbrain	person - industry	f	m
+Clay Heaton	@clayheaton	person	Ben Fry	@ben_fry	person - industry/academia	m	m
+Clay Heaton	@clayheaton	person	Jer Thorp	@blprnt	person - academia/art	m	m
+Seemant Kulleen	@seemantk	person - industry	Mike Bostock	@mbostock	person - industry	m	m
+Seemant Kulleen	@seemantk	person - industry	Jerome Cukier	@jcukier	person - industry	m	m
+Seemant Kulleen	@seemantk	person - industry	Ian Johnson	@enjalot	person - industry	m	m
+Chris Henrick	@chrislhenrick	person - industry	Kim Rees	@krees	person - industry	m	f
+Chris Henrick	@chrislhenrick	person - industry	Wesley Grubs	@wesleygrubbs	person - industry	m	m
+Chris Henrick	@chrislhenrick	person - industry	Pitch Interactive	@pitchinc	studio	m	NA
+Chris Henrick	@chrislhenrick	person - industry	Stamen Design	@stamen	studio	m	NA
+Chris Henrick	@chrislhenrick	person - industry	Gray Area	@GrayAreaorg	nonprofit	m	NA
+Chris Henrick	@chrislhenrick	person - industry	Maptime SF	@MaptimeSF	meetup	m	NA
+Nicolas Belmonte	@philogb	person - industry	Tamara Munzer	@tamaramunzner	person - academia	m	f
+Nicolas Belmonte	@philogb	person - industry	Jack van Wijk	@jackvanwijk	person - academia	m	m
+Vilmos Müller	@muller_vilmos	person	Mike Bostock	@mbostock	person - industry	m	m
+Vilmos Müller	@muller_vilmos	person	Manuel Lima	@mslima	person - industry	m	m
+Vilmos Müller	@muller_vilmos	person	Nicholas Rougeux	@rougeux	person - industry/art	m	m
+Vilmos Müller	@muller_vilmos	person	accurat	@accuratstudio	studio	m	NA
+Alessandro Zotta	@ale_zotta	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Alessandro Zotta	@ale_zotta	person - industry	Enrico Bertini	@FILWD	person - academia	m	m
+Alessandro Zotta	@ale_zotta	person - industry	Stefanie Posavec	@stefpos	person - industry	m	f
+Alessandro Zotta	@ale_zotta	person - industry	Manuel Lima	@mslima	person - industry	m	m
+Alessandro Zotta	@ale_zotta	person - industry	DensityDesign	@densitydesign	academic research lab	m	NA
+Alessandro Zotta	@ale_zotta	person - industry	accurat	@accuratstudio	studio	m	NA
+Alessandro Zotta	@ale_zotta	person - industry	Visualized	@visualized	studio	m	NA
+Refik Anadol	@refikanadol	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Refik Anadol	@refikanadol	person - industry	Karsten Schmidt	@toxi	person - industry	m	m
+Refik Anadol	@refikanadol	person - industry	Marius Watz	@mariuswatz	person - industry/art	m	m
+Refik Anadol	@refikanadol	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Refik Anadol	@refikanadol	person - industry	Jer Thorp	@blprnt	person - academia/art	m	m
+Refik Anadol	@refikanadol	person - industry	Aaron Koblin	@aaronkoblin	person - industry	m	m
+Refik Anadol	@refikanadol	person - industry	Casey Reas	@REAS	person - industry	m	m
+Bryan Bischof	@BEBischof	person - industry	Jason Davies	@jasondavies	person	m	m
+Bryan Bischof	@BEBischof	person - industry	Mike Bostock	@mbostock	person - industry	m	m
+Bryan Bischof	@BEBischof	person - industry	Robert Kosara	@eagereyes	person - industry	m	m
+Bryan Bischof	@BEBischof	person - industry	Bret Victor	@worrydream	person - nonprofit	m	m
+Bryan Bischof	@BEBischof	person - industry	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Bryan Bischof	@BEBischof	person - industry	Giorgia Lupi	@giorgialupi	person - industry	m	f
+Bryan Bischof	@BEBischof	person - industry	Fil	@recifs	studio	m	NA
+Bryan Bischof	@BEBischof	person - industry	Ian Johnson	@enjalot	person - industry	m	m
+Bryan Bischof	@BEBischof	person - industry	Franck Lebeau	@_Kcnarf	person	m	m
+Christo Allegra	@christoallegra	person - art	Bruce Mau Design	@brucemaudesign	studio	m	NA
+Christo Allegra	@christoallegra	person - art	Ramana Rao	@treerao	person - industry	m	m
+Christo Allegra	@christoallegra	person - art	TheDesignersRepublic	@disinfoTDR	studio	m	NA
+Christo Allegra	@christoallegra	person - art	Ben Schneiderman	@benbendc	person - academia	m	m
+Christo Allegra	@christoallegra	person - art	Amy Franceschini	@amyfranceschini	person	m	f
+Christo Allegra	@christoallegra	person - art	Lisa Strausfeld	@Strausfeld	person - industry/art	m	f
+Christo Allegra	@christoallegra	person - art	Sarah Slobin	@sarahslo	person - journalism	m	f
+Christo Allegra	@christoallegra	person - art	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Christo Allegra	@christoallegra	person - art	Ben Fry	@ben_fry	person - industry/academia	m	m
+Christo Allegra	@christoallegra	person - art	Mark Hansen	@cocteau	person - academia	m	m
+Christo Allegra	@christoallegra	person - art	Muriel Cooper	NA	person - academia/industry	m	f
+Christo Allegra	@christoallegra	person - art	Andy Warhol	NA	person - art	m	m
+Christo Allegra	@christoallegra	person - art	Otto Neurath	NA	person - academia	m	m
+Christo Allegra	@christoallegra	person - art	Gerd Arntz	NA	person - art	m	m
+Alli Torban	@AlliTorban	person - industry	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Alli Torban	@AlliTorban	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Joshua Stevens	@jscarto	person - nonprofit	Kirk Goldsberry	@kirkgoldsberry	person - industry	m	m
+Joshua Stevens	@jscarto	person - nonprofit	Karl Gude	@karlgude	person - academia	m	m
+Jacque Schrag	@jnschrag	person - industry	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Jacque Schrag	@jnschrag	person - industry	Shirley Wu	@sxywu	person - industry	m	f
+Jon Schwabish	@jschwabish	person - industry	Robert Kosara	@eagereyes	person - industry	m	m
+Jon Schwabish	@jschwabish	person - industry	Kim Rees	@krees	person - industry	m	f
+Jon Schwabish	@jschwabish	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Gurman Bhatia	@GurmanBhatia	person - journalism	Michael Keller	@mhkeller	person - journalism	m	m
+Bill Shander	@billshander	person - industry	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Amy Cesal	@AmyCesal	person - industry	Amanda Cox	@amandacox	person	f	f
+Amy Cesal	@AmyCesal	person - industry	Irene Ros	@ireneros	person - industry	f	f
+Yan	@yanoak	person	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Yan	@yanoak	person	Enrico Bertini	@FILWD	person - academia	m	m
+Pat Leahy	@patleahy	person - industry	National Geographic	@NatGeo	magazine	m	NA
+Xavi Gimenez	@xavigimenez	person - industry	Aaron Koblin	@aaronkoblin	person - industry	m	m
+Xavi Gimenez	@xavigimenez	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Chip Felton	@coevcjf	person - industry	Tableau	@tableau	software	m	NA
+Daniel Zvinca	@danz_68	person	Stephen Few	NA	person - industry	m	m
+Geoff Hinchcliffe	@gravitron	person - academia	Yugo Nakamura	@yugop	person - industry	m	m
+Nigel Hawtin	@nigelhawtin	person - industry	Nigel Holmes	@nigelblue	person	m	m
+Nigel Hawtin	@nigelhawtin	person - industry	John Grimwade	@johngrimwade	person - industry	m	m
+Nigel Hawtin	@nigelhawtin	person - industry	Joe Lertola	@jlert	person	m	m
+Víctor Pascual	@vpascual	person - industry	Juan Carlos Dürsteler	NA	person	m	m
+Víctor Pascual	@vpascual	person - industry	Jeffrey Heer	@jeffrey_heer	person - academia	m	m
+CLEVER°FRANKE	@cleverfranke	studio	John Maeda	@johnmaeda	person - industry	NA	m
+CLEVER°FRANKE	@cleverfranke	studio	Stamen Design	@stamen	studio	NA	NA
+CLEVER°FRANKE	@cleverfranke	studio	Aaron Koblin	@aaronkoblin	person - industry	NA	m
+Brouck Anderson	@Broucklynski	person - industry	Bill Shander	@billshander	person - industry	f	m
+Brouck Anderson	@Broucklynski	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	f	m
+Brouck Anderson	@Broucklynski	person - industry	Stephen Few	NA	person - industry	f	m
+Brouck Anderson	@Broucklynski	person - industry	Cole Knafic	@storywithdata	person - industry	f	f
+Brouck Anderson	@Broucklynski	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	f	m
+Brouck Anderson	@Broucklynski	person - industry	Lisa Charlotte Rost	@lisacrost	person - industry	f	f
+Brouck Anderson	@Broucklynski	person - industry	Lazaro Gamio	@LazaroGamio	person - industry	f	m
+Brouck Anderson	@Broucklynski	person - industry	NYT Graphics	@nytgraphics	news agency	f	NA
+Brouck Anderson	@Broucklynski	person - industry	Post Graphics	@PostGraphics	news agency	f	NA
+Brouck Anderson	@Broucklynski	person - industry	Datawrapper	@Datawrapper	studio	f	NA
+Luis Melgar	@asincopado	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Luis Melgar	@asincopado	person - industry	John Burn-Murdoch	@jburnmurdoch	person - journalism	m	m
+Luis Melgar	@asincopado	person - industry	Lena Groeger	@lenagroeger	person - journalism	m	f
+Luis Melgar	@asincopado	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Bill Rapp	@billrapp	person - academia	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Bill Rapp	@billrapp	person - academia	Amanda Cox	@amandacox	person	m	f
+Bill Rapp	@billrapp	person - academia	GOOD	@good	studio	m	NA
+Bill Rapp	@billrapp	person - academia	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Bill Rapp	@billrapp	person - academia	Jer Thorp	@blprnt	person - academia/art	m	m
+Bill Rapp	@billrapp	person - academia	Nicholas Felton	@feltron	person - industry/art	m	m
+Linton Corbet	@LintonCorbet	person	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Linton Corbet	@LintonCorbet	person	Enrico Bertini	@FILWD	person - academia	m	m
+Mika Aldaba	@hailmika	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Mika Aldaba	@hailmika	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Simon Rowe	@mrroweuk	person - industry	Cole Knafic	@storywithdata	person - industry	m	f
+Simon Rowe	@mrroweuk	person - industry	Andy Kriebel	@VizWizBI	person - industry	m	m
+dead thought	@thoughtisdead	person	Nathan Yau	@flowingdata	person - industry	m	m
+dead thought	@thoughtisdead	person	Mike Bostock	@mbostock	person - industry	m	m
+dead thought	@thoughtisdead	person	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+dead thought	@thoughtisdead	person	Jeffrey Heer	@jeffrey_heer	person - academia	m	m
+Lilach Manheim	@lilachmanheim	person - industry	Kelly Martin	@VizCandy	person - industry	f	f
+Lilach Manheim	@lilachmanheim	person - industry	Russell Spangler	@russellspangler	person - industry	f	m
+Krunal Palande	@krunalspalande	person - industry	Nathan Yau	@flowingdata	person - industry	m	m
+Neal Grantham	@nsgrantham	person - industry	Nathan Yau	@flowingdata	person - industry	m	m
+Neal Grantham	@nsgrantham	person - industry	Hadley Wickham	@hadleywickham	person - industry/academia	m	m
+Neal Grantham	@nsgrantham	person - industry	Logan Lossing	@NagolGnissol	person - industry/academia	m	m
+Irene de la Torre	@inari_ta	person - journalism	Artur Galocha	@arturgalocha	person - industry	f	m
+Irene de la Torre	@inari_ta	person - journalism	accurat	@accuratstudio	studio	f	NA
+Irene de la Torre	@inari_ta	person - journalism	Martin Wattenberg	@wattenberg	person - industry	f	m
+Irene de la Torre	@inari_ta	person - journalism	Fernanda Viégas	@viegasf	person - industry	f	f
+Trud Antzée	@Antzee_	person - industry	Nadieh Bremer	@NadiehBremer	person - industry	f	f
+Trud Antzée	@Antzee_	person - industry	Shirley Wu	@sxywu	person - industry	f	f
+Mike Stringer	@mstringer	person - industry	Amanda Cox	@amandacox	person	m	f
+Mike Stringer	@mstringer	person - industry	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Mike Stringer	@mstringer	person - industry	Kevin Quealy	@KevinQ	person - journalism	m	m
+Mike Stringer	@mstringer	person - industry	Shan Carter	@shancarter	person - industry	m	m
+Mike Stringer	@mstringer	person - industry	Manuel Lima	@mslima	person - industry	m	m
+Mike Stringer	@mstringer	person - industry	Bret Victor	@worrydream	person - nonprofit	m	m
+Mike Stringer	@mstringer	person - industry	SEES Lab	@sees_lab	academic research lab	m	NA
+Dominikus Baur	@Dominikus	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Dominikus Baur	@Dominikus	person - industry	Santiago Ortiz	@moebio	person - industry	m	m
+Corinne Pritchard	@understood	person - industry	David McCandless	@infobeautiful	person - industry/art	f	m
+Mirko Lorenz	@mirkolorenz	person - industry	Adrian Holovaty	@adrianholovaty	person - industry	m	m
+Jo Wood	@jwoLondon	person - academia	Eduard Imhof	NA	person - academia	m	m
+Jo Wood	@jwoLondon	person - academia	Ben Fry	@ben_fry	person - industry/academia	m	m
+Jo Wood	@jwoLondon	person - academia	Casey Reas	@REAS	person - industry	m	m
+Angies Skazka	@angieskazka	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	f	m
+Angies Skazka	@angieskazka	person - industry	Mike Bostock	@mbostock	person - industry	f	m
+Angies Skazka	@angieskazka	person - industry	Tanya Bibikova	@infotanka	person - industry	f	f
+Angies Skazka	@angieskazka	person - industry	Data Laboratory	@datalaboratory	studio	f	NA
+Awalin Sopan	@awalinsopan	person - industry	Ben Schneiderman	@benbendc	person - academia	f	m
+Awalin Sopan	@awalinsopan	person - industry	Krist Wongsuphasawat	@kristw	person - industry	f	m
+Awalin Sopan	@awalinsopan	person - industry	Mike Bostock	@mbostock	person - industry	f	m
+Durand D'souza	@durand101	person - industry	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Tiago Henriques	@Balgan	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Tiago Henriques	@Balgan	person - industry	Bob Rudis	@hrbrmstr	person - industry	m	m
+Tiago Henriques	@Balgan	person - industry	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Sarah Schöttler	@sarahschoettler	person - student	Nadieh Bremer	@NadiehBremer	person - industry	f	f
+Ken Flerlage	@flerlagekr	person - industry	RJ Andrews	@infowetrust	person - industry	m	m
+Jana A. Hirsch	@Jana_Hirsch	person - academia	Usama Bilal	@usama_bilal	person - academia	f	m
+Greg More	@gregmore	person - industry	Stamen Design	@stamen	studio	m	NA
+Greg More	@gregmore	person - industry	Aaron Koblin	@aaronkoblin	person - industry	m	m
+Greg More	@gregmore	person - industry	Laura Kurgan	@laurakurgan	person - academia	m	f
+Rocío Márquez	@arixha	person - academia	Josh On	NA	person	m	m
+Rocío Márquez	@arixha	person - academia	Jonathan Harris	@jjhnumber27	person - industry/art	m	m
+Rocío Márquez	@arixha	person - academia	Fernando Baptista	@fg_baptista	person - journalism	m	m
+Rocío Márquez	@arixha	person - academia	Jaime Serra	@ja_serra	person - journalism/art	m	m
+Rocío Márquez	@arixha	person - academia	Raúl Camañas	@raulcamanas	person - journalism	m	m
+Abraham Flaxman	@healthyalgo	person - academia	Kyle Foreman	@kforeman	person - industry	m	m
+Tony Chu	@tonyhschu	person - industry	Jer Thorp	@blprnt	person - academia/art	m	m
+Tony Chu	@tonyhschu	person - industry	Amit Pitaru	@pitaru	person - industry	m	m
+agoston nagy	@_stc	studio	John Maeda	@johnmaeda	person - industry	NA	m
+agoston nagy	@_stc	studio	the Processing Foundation	@ProcessingOrg	foundation	NA	NA
+Ian Watkins	@DoNotBeOnFire	person	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Ian Watkins	@DoNotBeOnFire	person	Mike Bostock	@mbostock	person - industry	m	m
+Jovan Lekovic	@lekovicj	person - industry	Nathan Yau	@flowingdata	person - industry	m	m
+Jovan Lekovic	@lekovicj	person - industry	Peltier Tech	@PeltierTech	studio	m	NA
+Jeff Sims	@jmsims2	person - industry	Ian Johnson	@enjalot	person - industry	m	m
+Moyocoyani	@MoiYo	person	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Marcin Ignac	@marcinignac	person - industry	Shawn Allen	@shawnbot	person - industry	m	m
+Marcin Ignac	@marcinignac	person - industry	Manuel Lima	@mslima	person - industry	m	m
+Sarah Slobin	@sarahslo	person - journalism	Archie Tse	@archietse	person - journalism	f	m
+Marielle Lange	@widged	person - industry	Mike Bostock	@mbostock	person - industry	f	m
+Mark-Jan Bludau	@markiaaan	person - academia	5W Infographics	@5Winfographics	studio	m	NA
+Mark-Jan Bludau	@markiaaan	person - academia	Francesco Franchi	@ffranchi	person - journalism/academia	m	m
+Mark-Jan Bludau	@markiaaan	person - academia	Mike Bostock	@mbostock	person - industry	m	m
+Caroline Seguin	@caroline_seg	person	Giorgia Lupi	@giorgialupi	person - industry	f	f
+Xaquín G.V.	@xocasgv	person - industry/journalism	John Grimwade	@johngrimwade	person - industry	m	m
+Xaquín G.V.	@xocasgv	person - industry/journalism	Xoán G	NA	person	m	m
+Xaquín G.V.	@xocasgv	person - industry/journalism	Juan Velasco	@juanvelasco	person - industry	m	m
+Xaquín G.V.	@xocasgv	person - industry/journalism	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Xaquín G.V.	@xocasgv	person - industry/journalism	Archie Tse	@archietse	person - journalism	m	m
+Xaquín G.V.	@xocasgv	person - industry/journalism	Steve Duenes	@Duenes	person - journalism	m	m
+Xaquín G.V.	@xocasgv	person - industry/journalism	NYT Graphics	@nytgraphics	news agency	m	m
+Kartik Kwatra	@Kartik_Kwatra	person	Tony Chu	@tonyhschu	person - industry	m	m
+Kartik Kwatra	@Kartik_Kwatra	person	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Oscar Senar	@Senaretal	person - academia	Sonja Kuijpers	@SonjaKuijpers	person - industry	m	f
+Oscar Senar	@Senaretal	person - academia	Giorgia Lupi	@giorgialupi	person - industry	m	f
+Oscar Senar	@Senaretal	person - academia	accurat	@accuratstudio	studio	m	NA
+Mike Brondbjerg	@mikebrondbjerg	person - industry/art	Jer Thorp	@blprnt	person - academia/art	m	m
+Mike Brondbjerg	@mikebrondbjerg	person - industry/art	Karsten Schmidt	@toxi	person - industry	m	m
+Mike Brondbjerg	@mikebrondbjerg	person - industry/art	Scott Murray	@alignedleft	person - industry	m	m
+Mike Brondbjerg	@mikebrondbjerg	person - industry/art	Matt Miller	@transmitclarity	person - industry	m	m
+Paul Van Slembrouck	@ptvan	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Joe DiNoto	@mathteacher1729	person - academia	Kaiser Fung	@junkcharts	person - industry	m	m
+Dave Fuschi	@novelune	person - industry/art	Wassily Kandinsky	NA	person - art	m	m
+Dave Fuschi	@novelune	person - industry/art	Pieter Bruegel the Elder	NA	person - art	m	m
+Fil	@recifs	studio	Visions carto	@visionscarto	studio	NA	NA
+Fil	@recifs	studio	Otto & Marie Neurath	@OMNeurath	studio	NA	NA
+Fil	@recifs	studio	D3.js	@d3js_org	software	NA	NA
+Fil	@recifs	studio	Shirley Wu	@sxywu	person - industry	NA	f
+Franck Lebeau	@_Kcnarf	person	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Franck Lebeau	@_Kcnarf	person	Mike Bostock	@mbostock	person - industry	m	m
+Franck Lebeau	@_Kcnarf	person	Jason Davies	@jasondavies	person	m	m
+Franck Lebeau	@_Kcnarf	person	Ian Johnson	@enjalot	person - industry	m	m
+Franck Lebeau	@_Kcnarf	person	Noah Veltman	@veltman	person - industry	m	m
+Franck Lebeau	@_Kcnarf	person	Thierry Galeuchet	@recif	person - art	m	m
+Franck Lebeau	@_Kcnarf	person	Vasco Asturiano	@vastur	person - industry	m	m
+Franck Lebeau	@_Kcnarf	person	Lisa Charlotte Rost	@lisacrost	person - industry	m	f
+Franck Lebeau	@_Kcnarf	person	Andy Kirk	@visualisingdata	person - industry	m	m
+Sonja Kuijpers	@SonjaKuijpers	person - industry	Stefanie Posavec	@stefpos	person - industry	f	f
+Sonja Kuijpers	@SonjaKuijpers	person - industry	accurat	@accuratstudio	studio	f	NA
+Jacopo Ottaviani	@JacopoOttaviani	person - journalism/nonprofit	Simon Rogers	@smfrogers	person - industry	m	m
+Jacopo Ottaviani	@JacopoOttaviani	person - journalism/nonprofit	John Burn-Murdoch	@jburnmurdoch	person - journalism	m	m
+Jacopo Ottaviani	@JacopoOttaviani	person - journalism/nonprofit	Paolo Ciuccarelli	@pciuccarelli	person - academia	m	m
+Jacopo Ottaviani	@JacopoOttaviani	person - journalism/nonprofit	DensityDesign	@densitydesign	academic research lab	m	NA
+Jacopo Ottaviani	@JacopoOttaviani	person - journalism/nonprofit	calibro	@studiocalibro	studio	m	NA
+Periscopic	@Periscopic	studio	Stamen Design	@stamen	studio	NA	NA
+Stamen Design	@stamen	studio	Étienne-Jules Marey	NA	person - academia	NA	m
+Stamen Design	@stamen	studio	Quokka	NA	studio	NA	NA
+Juan Morales	@crispamares	person - industry	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Juan Morales	@crispamares	person - industry	Gapminder	@Gapminder	nonprofit	m	NA
+Juan Morales	@crispamares	person - industry	José Luis de Vicente	@jldevicente	person - academia/art	m	m
+Juan Morales	@crispamares	person - industry	Aaron Koblin	@aaronkoblin	person - industry	m	m
+Juan Morales	@crispamares	person - industry	Manuel Lima	@mslima	person - industry	m	m
+Juan Morales	@crispamares	person - industry	Ben Schneiderman	@benbendc	person - academia	m	m
+Piero Zagami	@pierozagami	person - industry	Peter Crnokrak	NA	person - art	m	m
+Piero Zagami	@pierozagami	person - industry	Joost Grootens	NA	person - industry	m	m
+Piero Zagami	@pierozagami	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Tiziana Alocci	@Altiziana	person - industry	Paolo Ciuccarelli	@pciuccarelli	person - academia	f	m
+Tiziana Alocci	@Altiziana	person - industry	DensityDesign	@densitydesign	academic research lab	f	NA
+Tiziana Alocci	@Altiziana	person - industry	Hans Rosling	@HansRosling	person - industry/academia	f	m
+Tiziana Alocci	@Altiziana	person - industry	Lev Manovich	NA	person - academia	f	m
+Tiziana Alocci	@Altiziana	person - industry	Kim Albrecht	@kimay	person - academia	f	m
+Tiziana Alocci	@Altiziana	person - industry	Bloomberg Graphics	@BBGVisualData	news agency	f	NA
+Tiziana Alocci	@Altiziana	person - industry	accurat	@accuratstudio	studio	f	NA
+Tiziana Alocci	@Altiziana	person - industry	Peter Orntoft	NA	person - industry	f	m
+Tiziana Alocci	@Altiziana	person - industry	Nicholas Felton	@feltron	person - industry/art	f	m
+Tiziana Alocci	@Altiziana	person - industry	John Burn-Murdoch	@jburnmurdoch	person - journalism	f	m
+Tiziana Alocci	@Altiziana	person - industry	Mona Chalabi	@MonaChalabi	person - industry	f	f
+Eric William Lin	@ericwilliamlin	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Jean-Daniel Fekete	@jdfaviz	person - academia	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Jaques Bertin	NA	person	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	William S Cleveland	NA	person - academia	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Robert McGill	NA	person - academia	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Nathan Yau	@flowingdata	person - industry	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Tamara Munzer	@tamaramunzner	person - academia	m	f
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	NYT Graphics	@nytgraphics	news agency	m	NA
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	The Washington Post	@washingtonpost	news agency	m	NA
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Yan Holtz	@R_Graph_Gallery	person - industry	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Hadley Wickham	@hadleywickham	person - industry/academia	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Joe Cheng	@jcheng	person - industry	m	m
+Christophe Bontemps	@Xtophe_Bontemps	person - academia	Dianne Cook	@visnut	person - academia	m	f
+Fernando Cucchietti	@thefercook	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Fernando Cucchietti	@thefercook	person - industry	bestiario_	@bestiario140	studio	m	NA
+Fernando Cucchietti	@thefercook	person - industry	Santiago Ortiz	@moebio	person - industry	m	m
+Fernando Cucchietti	@thefercook	person - industry	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Fernando Cucchietti	@thefercook	person - industry	Aaron Koblin	@aaronkoblin	person - industry	m	m
+Fernando Cucchietti	@thefercook	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Fernando Cucchietti	@thefercook	person - industry	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Charles Saulnier	@ChuckyDee25	person - industry	Cole Knafic	@storywithdata	person - industry	m	f
+Charles Saulnier	@ChuckyDee25	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Charles Saulnier	@ChuckyDee25	person - industry	Stephen Few	NA	person - industry	m	m
+Charles Saulnier	@ChuckyDee25	person - industry	Jer Thorp	@blprnt	person - academia/art	m	m
+Kaitlin Messmer	@kmessmerized	person	Cole Knafic	@storywithdata	person - industry	f	f
+Kaitlin Messmer	@kmessmerized	person	Alberto Cairo	@AlbertoCairo	person - academia	f	m
+Kaitlin Messmer	@kmessmerized	person	Stephen Few	NA	person - industry	f	m
+Kaitlin Messmer	@kmessmerized	person	Jer Thorp	@blprnt	person - academia/art	f	m
+Giovanna Coi	@gi_coi	person - student	Alberto Cairo	@AlbertoCairo	person - academia	f	m
+Giovanna Coi	@gi_coi	person - student	Andy Kirk	@visualisingdata	person - industry	f	m
+Giovanna Coi	@gi_coi	person - student	John Burn-Murdoch	@jburnmurdoch	person - journalism	f	m
+Giovanna Coi	@gi_coi	person - student	Maarten Lambrechts	@maartenzam	person - industry	f	m
+Tony Pritchard	@tonyplcc	person - academia	David Driver	NA	person	m	m
+Tony Pritchard	@tonyplcc	person - academia	Peter Brookes	NA	person	m	m
+Tony Pritchard	@tonyplcc	person - academia	Nigel Holmes	NA	person	m	m
+Tony Pritchard	@tonyplcc	person - academia	Diagram Visual Information	NA	studio	m	NA
+Tony Pritchard	@tonyplcc	person - academia	Otto & Marie Neurath	@OMNeurath	studio	m	NA
+Tony Pritchard	@tonyplcc	person - academia	Florence Nightingale	NA	person - medicine	m	f
+Tony Pritchard	@tonyplcc	person - academia	John Snow	NA	person - medicine	m	m
+Viola Bernacchi	@ViolaBernacchi	person - industry	DensityDesign	@densitydesign	academic research lab	f	NA
+Viola Bernacchi	@ViolaBernacchi	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	f	m
+Viola Bernacchi	@ViolaBernacchi	person - industry	David McCandless	@infobeautiful	person - industry/art	f	m
+Viola Bernacchi	@ViolaBernacchi	person - industry	Giorgia Lupi	@giorgialupi	person - industry	f	f
+Viola Bernacchi	@ViolaBernacchi	person - industry	Stefanie Posavec	@stefpos	person - industry	f	f
+Viola Bernacchi	@ViolaBernacchi	person - industry	Ryoji Ikeda	@ryojiikeda	person - art	f	m
+Viola Bernacchi	@ViolaBernacchi	person - industry	LUST	@LUSTnl	studio	f	NA
+Emanuele Santos	@emanueles	person - academia	Hans Rosling	@HansRosling	person - industry/academia	f	m
+Will Geary	@wgeary	person - industry	Juan Francisco Saldarriaga	@juanfrans	person - academia	m	m
+Will Geary	@wgeary	person - industry	Laura Kurgan	@laurakurgan	person - academia	m	f
+Will Geary	@wgeary	person - industry	Spatial Research	@c4sr_columbia	academic research lab	m	NA
+Will Geary	@wgeary	person - industry	Sarah Williams	@datasew	person - academia	m	f
+Ilyas Muhammed	@_mariyaan	person - journalism	Gurman Bhatia	@GurmanBhatia	person - journalism	m	m
+Steven Cresawn	@scresawn	person - academia	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Steven Cresawn	@scresawn	person - academia	Mike Bostock	@mbostock	person - industry	m	m
+Steven Cresawn	@scresawn	person - academia	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Steven Cresawn	@scresawn	person - academia	Shirley Wu	@sxywu	person - industry	m	f
+Francis Gagnon	@francisgagnon	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Francis Gagnon	@francisgagnon	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Jason Mack	@dataMack	person - industry	Stephen Few	NA	person - industry	m	m
+Anthony Sorace	@anths	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Jesús Nieto	@SolEnFlandes	person - public	Stephen Few	NA	person - industry	m	m
+Susannah Cowtan	@SuusJC	person - student	Hans Rosling	@HansRosling	person - industry/academia	f	m
+Adina Renner	@adinarenner	person - student	Moritz Stefaner	@moritz_stefaner	person - industry	f	m
+Adina Renner	@adinarenner	person - student	DensityDesign	@densitydesign	academic research lab	f	NA
+Adina Renner	@adinarenner	person - student	Interactive Things	@IXT	studio	f	NA
+Adina Renner	@adinarenner	person - student	Nadieh Bremer	@NadiehBremer	person - industry	f	f
+Adina Renner	@adinarenner	person - student	Jan Willem Tulp	@JanWillemTulp	person - industry	f	m
+Adina Renner	@adinarenner	person - student	Andy Kirk	@visualisingdata	person - industry	f	m
+Adina Renner	@adinarenner	person - student	Fernanda Viégas	@viegasf	person - industry	f	f
+Adina Renner	@adinarenner	person - student	Robert Kosara	@eagereyes	person - industry	f	m
+Adina Renner	@adinarenner	person - student	Tiziana Alocci	@Altiziana	person - industry	f	f
+Adina Renner	@adinarenner	person - student	Piero Zagami	@pierozagami	person - industry	f	m
+Nicholas	@CanovaAnalytics	person - industry	Kirk Goldsberry	@kirkgoldsberry	person - industry	m	m
+Maneesh	@tonymonotonyna	person	NYT Graphics	@nytgraphics	news agency	m	NA
+Joe	@josephtravers	person	Stephanie Evergreen	@evergreendata	person - industry	m	f
+Gabe Gloege	@gabegloege	person - industry/art	Nikita Rokotyan	@Ernaem	person - industry	m	m
+Alessandro Musetta	@lsnmst	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Alessandro Musetta	@lsnmst	person - industry	Jaques Bertin	NA	person	m	m
+Shayan	@Shayan_Seyedi	person	Nadieh Bremer	@NadiehBremer	person - industry	m	f
+Joseph Hsieh	@webjoe	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Keith Ng	@keith_ng	person - industry	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Cemre Güngör	@gem_ray	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Charles Sutton	@impacsis	person - industry	Andy Kriebel	@VizWizBI	person - industry	m	m
+Vincent Finat-Duclos	@twitvfd	person	Hadley Wickham	@hadleywickham	person - industry/academia	m	m
+Vincent Finat-Duclos	@twitvfd	person	Jerome Cukier	@jcukier	person - industry	m	m
+Vincent Finat-Duclos	@twitvfd	person	Moritz Stefaner	@moritz_stefaner	person - industry	m	m
+Luca Bonavita	@mindrones	person - industry	Mike Bostock	@mbostock	person - industry	m	m
+Michael J. Stamper	@michaeljstamper	person - academia	Katy Borner	@katycns	person - academia	m	f
+Ryo Sakai	@ryodejaneiro	person	Ben Fry	@ben_fry	person - industry/academia	m	m
+Ryo Sakai	@ryodejaneiro	person	Miriah Meyer	@miriah_meyer	person - academia	m	f
+Ryo Sakai	@ryodejaneiro	person	Bang Wong	@bangwong	person - academia	m	m
+Javier Zarracina	@JZarracina	person - journalism	Nigel Holmes	@nigelblue	person	m	m
+Javier Zarracina	@JZarracina	person - journalism	John Grimwade	@johngrimwade	person - industry	m	m
+Javier Zarracina	@JZarracina	person - journalism	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+Javier Zarracina	@JZarracina	person - journalism	Tomás Ondarra	@TomasOndarra	person - industry/art	m	m
+Javier Zarracina	@JZarracina	person - journalism	Peter Sullivan	NA	person - academia/industry	m	m
+Riccardo Bonfichi	@rbonfichi	person - industry	John Tukey	NA	person - academia	m	m
+Riccardo Bonfichi	@rbonfichi	person - industry	Ellis R Ott	NA	person - academia	m	m
+Pekka Pulli	@pekkapulli	person - industry	Bret Victor	@worrydream	person - nonprofit	m	m
+Michael Brenner	@ContentContext1	person - nonprofit	MGMT.	@mgmtdesign	studio	m	NA
+Damon Crockett	@DamonCrockett	person - academia	Jim Hollan	@ProfHollan	person - academia	m	m
+Mike Graham	@DatumGeek	person - industry	Mike Bostock	@mbostock	person - industry	m	m
+Alberto Gonzalez Paje	@algonpaje	person - industry	Ben Schneiderman	@benbendc	person - academia	m	m
+Alberto Gonzalez Paje	@algonpaje	person - industry	Santiago Ortiz	@moebio	person - industry	m	m
+Alberto Gonzalez Paje	@algonpaje	person - industry	Jer Thorp	@blprnt	person - academia/art	m	m
+Alberto Gonzalez Paje	@algonpaje	person - industry	bestiario_	@bestiario140	studio	m	NA
+Alberto Gonzalez Paje	@algonpaje	person - industry	Ben Fry	@ben_fry	person - industry/academia	m	m
+Dennys Hess	@dennyshess	person - industry	Mike Bostock	@mbostock	person - industry	m	m
+Douglass Turner	@dugla	person - industry	Mike Bostock	@mbostock	person - industry	m	m
+Douglass Turner	@dugla	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Paul Button	@sectiondesign	person - industry	Nicholas Felton	@feltron	person - industry/art	m	m
+Paul Button	@sectiondesign	person - industry	Catalogtree	NA	studio	m	NA
+Hlynur Hallgrímsson	@hlynur	person - public	Tony Chu	@tonyhschu	person - industry	m	m
+Rajesh	@rajesh66ok	person - industry	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Rajesh	@rajesh66ok	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+David da Silva	@dasilvacontin	person - industry	Jonathan Chomko	@jtchomko	person - art	m	m
+David da Silva	@dasilvacontin	person - industry	Matthew Rosier	@mattrosier	person - art	m	m
+Colin Megill	@colinmegill	person - industry	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Colin Megill	@colinmegill	person - industry	Shan Carter	@shancarter	person - industry	m	m
+Lars Schubert	@graphomate	person - industry	Rolf Hichert	@RolfHichert	person - industry	m	m
+Lars Schubert	@graphomate	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
+Lars Schubert	@graphomate	person - industry	Stephen Few	NA	person - industry	m	m
+Lars Schubert	@graphomate	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
+My Data Visualizer	@MVisualizer	software	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Thong Yong Jun	@yongjun21	person 	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Finn Macleod	@finnolaf	person	Hans Rosling	@HansRosling	person - industry/academia	m	m
+Małgorzata Matachowska	@m_matach	person	David McCandless	@infobeautiful	person - industry/art	f	m
+Małgorzata Matachowska	@m_matach	person	Hadley Wickham	@hadleywickham	person - industry/academia	f	m
+Małgorzata Matachowska	@m_matach	person	Alberto Cairo	@AlbertoCairo	person - academia	f	m
+Małgorzata Matachowska	@m_matach	person	Hans Rosling	@HansRosling	person - industry/academia	f	m
+Małgorzata Matachowska	@m_matach	person	Nathan Yau	@flowingdata	person - industry	f	m

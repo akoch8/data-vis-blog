@@ -11,6 +11,12 @@ library('networkD3')
 
 networkData = fread('dataVizInspiration.txt', data.table=FALSE, encoding='UTF-8')
 
+# How many accounts replied on twitter?
+length(unique(networkData$person_twitter))
+
+# How many people/things were mentioned as inspiration?
+length(unique(networkData$inspiration))
+
 # What is the gender distribution in the people and their inspirations?
 personGender = unique(networkData[,c('person', 'person_gender')])
 personGender = table(personGender$person_gender)
@@ -19,6 +25,13 @@ inspGender = unique(networkData[,c('inspiration', 'inspiration_gender')])
 inspGender = table(inspGender$inspiration_gender)
 inspGender = inspGender / sum(inspGender) * 100
 barplot(cbind(personGender, inspGender), col=c('#8624F5', '#1FC3AA'), border='#ffffff')
+
+# Where men more likely to be inspired by men?
+inspForWomen = table(networkData[which(networkData$person_gender == 'f'),]$inspiration_gender)
+inspForWomen / sum(inspForWomen) * 100
+inspForMen = table(networkData[which(networkData$person_gender == 'm'),]$inspiration_gender)
+inspForMen / sum(inspForMen) * 100
+fisher.test(rbind(inspForWomen, inspForMen))
 
 # What are people's affiliations?
 table(unique(networkData[,c('person', 'person_type')])$person_type)

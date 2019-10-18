@@ -529,7 +529,7 @@ Lars Schubert	@graphomate	person - industry	Rolf Hichert	@RolfHichert	person - i
 Lars Schubert	@graphomate	person - industry	Edward Tufte	@EdwardTufte	person - industry/academia	m	m
 Lars Schubert	@graphomate	person - industry	Stephen Few	NA	person - industry	m	m
 Lars Schubert	@graphomate	person - industry	Alberto Cairo	@AlbertoCairo	person - academia	m	m
-My Data Visualizer	@MVisualizer	software	Hans Rosling	@HansRosling	person - industry/academia	m	m
+My Data Visualizer	@MVisualizer	software	Hans Rosling	@HansRosling	person - industry/academia	NA	m
 Thong Yong Jun	@yongjun21	person 	Hans Rosling	@HansRosling	person - industry/academia	m	m
 Finn Macleod	@finnolaf	person	Hans Rosling	@HansRosling	person - industry/academia	m	m
 Małgorzata Matachowska	@m_matach	person	David McCandless	@infobeautiful	person - industry/art	f	m

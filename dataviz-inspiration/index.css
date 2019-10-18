@@ -4,10 +4,6 @@
 	padding: 0;
 }
 body {
-	background: #fefefe;
-	color: #3f3f3f;
-	font: 12px/1.5 Arial, sans-serif;
-	font-weight: 400;
 	margin: 0;
 	width: 100%;
 }
@@ -22,10 +18,22 @@ section {
 }
 svg {
 	display: block;
+	font: 12px/1.2 Arial, sans-serif;
 	margin: 0 auto;
 }
-svg:hover {
+.inline-svg {
+	display: inline-block;
+	margin: 0 0.2rem;
+	vertical-align: text-bottom;
+}
+#network-graph:hover {
 	cursor: move;
+}
+.female {
+	color: #8624f5;
+}
+.male {
+	color: #1fc3aa;
 }
 .person-name, .important-person-name {
 	fill: #3f3f3f;
@@ -73,12 +81,15 @@ li {
 	margin: 0.5rem 0;
 }
 .legend {
-	background: #fefefe;
+	font: 12px/1.2 Arial, sans-serif;
 	left: 0;
 	padding: 0 0.5rem;
 	position: absolute;
 	text-align: left;
 	top: 0;
+}
+.legend li {
+	display: block;
 }
 .legend-circle {
 	background: #ccc;
@@ -148,6 +159,7 @@ button:active {
 	display: none;
 }
 .invisible {
+	font: 12px/1.2 Arial, sans-serif;
 	visibility: hidden;
 	white-space: nowrap;
 }

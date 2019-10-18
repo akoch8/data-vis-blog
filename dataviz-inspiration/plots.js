@@ -4,6 +4,54 @@ function measureLength(text) {
 	return ruler.outerWidth();
 }
 
+// Person gender pie chart
+var radius = 10;
+var personGenderSvg = d3.select('#person-gender')
+	.append('svg')
+	.attr('width', 20)
+	.attr('height', 20)
+	.attr('class', 'inline-svg')
+	.append('g')
+	.attr('transform', 'translate(10, 10)');
+var data = {female: 30, male: 127};
+var color = d3.scaleOrdinal()
+	.domain(data)
+	.range(['#8624f5', '#1fc3aa']);
+var pie = d3.pie()
+	.value(function(d) { return d.value; });
+var data_ready = pie(d3.entries(data));
+personGenderSvg
+	.selectAll('whatever')
+	.data(data_ready)
+	.enter()
+	.append('path')
+	.attr('d', d3.arc()
+		.innerRadius(0)
+		.outerRadius(radius)
+	)
+	.attr('fill', function(d){ return(color(d.data.key)); });
+
+// Inspiration gender pie chart
+var inspirationGenderSvg = d3.select('#inspiration-gender')
+	.append('svg')
+	.attr('width', 20)
+	.attr('height', 20)
+	.attr('class', 'inline-svg')
+	.append('g')
+	.attr('transform', 'translate(10, 10)');
+data = {female: 32, male: 136};
+data_ready = pie(d3.entries(data));
+inspirationGenderSvg
+	.selectAll('whatever')
+	.data(data_ready)
+	.enter()
+	.append('path')
+	.attr('d', d3.arc()
+		.innerRadius(0)
+		.outerRadius(radius)
+	)
+	.attr('fill', function(d){ return(color(d.data.key)); });
+
 // Inspiration count barplot
 d3.tsv('inspirationCount.txt', function(error, data) {
 	if (error) throw error;
@@ -38,6 +86,15 @@ d3.tsv('inspirationCount.txt', function(error, data) {
 			.attr('height', barHeight)
 			.attr('fill', function(d) { return color(+d.count); });
 	
+	// Add a label for the x axis.
+	svg.append('text')
+		.attr('x', x(0))
+		.attr('y', y(0))
+		.attr('font-size', 14)
+		.attr('fill', '#3f3f3f')
+		.attr('alignment-baseline', 'middle')
+		.text('Number of mentions →');
+
 	// Add the names.
 	svg.selectAll('bar')
 		.data(data)
@@ -140,6 +197,15 @@ d3.tsv('luminaryCount.txt', function(error, data) {
 			.attr('height', barHeight)
 			.attr('fill', function(d) { return color(+d.count); });
 	
+	// Add a label for the x axis.
+	svg.append('text')
+		.attr('x', x(0))
+		.attr('y', y(0))
+		.attr('font-size', 14)
+		.attr('fill', '#3f3f3f')
+		.attr('alignment-baseline', 'middle')
+		.text('Number of mentions →');
+	
 	// Add the names.
 	svg.selectAll('bar')
 		.data(data)
@@ -153,7 +219,7 @@ d3.tsv('luminaryCount.txt', function(error, data) {
 				if (name.length > 23) {
 					name = name.substr(0, 23) + '...';
 				}
-				if (+d.rank === 1) {
+				/*if (+d.rank === 1) {
 					name = name + ' 🥇';
 				}
 				if (+d.rank === 2) {
@@ -161,7 +227,7 @@ d3.tsv('luminaryCount.txt', function(error, data) {
 				}
 				if (+d.rank === 3) {
 					name = name + ' 🥉';
-				}
+				}*/
 				return name;
 			})
 			.on('click', function(d) {

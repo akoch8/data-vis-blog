@@ -18,7 +18,7 @@ library('rgdal')
 
 # Delimit the area we're going to plot. The idea is to have the Brussels "pentagon"
 # (the city center surrounded by the small ring road) roughly in the center of the
-# poster.
+# poster. I picked the delimiting latitude and longitude values by hand.
 boundingBox = matrix(c(4.3, 4.4, 50.8, 50.9), nrow=2, ncol=2, byrow=TRUE)
 colnames(boundingBox) = c('min', 'max')
 rownames(boundingBox) = c('x', 'y')

@@ -13,4 +13,5 @@ Don't hesitate to get in touch whenever you run into any problems with my code, 
 * [Female genital mutilation](https://alexanderkoch.be/blog/female-genital-mutilation.html)
 * [Dataviz inspiration](https://alexanderkoch.be/blog/dataviz-inspiration.html)
 * [BXL cobblestones](https://alexanderkoch.be/blog/cobblestones-brussels.html)
+* [Flow cell (generative art)](https://alexanderkoch.be/blog/flow-cell.html)
   

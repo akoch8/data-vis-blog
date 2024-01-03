@@ -61,8 +61,6 @@
 		let video;
 		let canvasHeight = 525;
 		let canvasWidth = 700;
-		//console.log(canvasWidth, canvasHeight);
-
 		let constraints = {
 			video: {
 				mandatory: {},
@@ -89,21 +87,6 @@
 		}
 
 		function convertColor(c) {
-			let newColor = [255, 255, 0];
-			if (c.length > 3) {
-				c.pop();
-			}
-			if (c[0] >= c[1] && c[0] >= c[2]) {
-				newColor = [255, 0, 0];
-			} else if (c[1] >= c[0] && c[1] >= c[2]) {
-				newColor = [0, 255, 0];
-			} else {
-				newColor = [0, 0, 255];
-			}
-			return newColor;
-		}
-
-		function convertColor2(c) {
 			let newColor;
 			let colorMean = Math.floor((c[0] + c[1] + c[2]) / 3);
 			let thresholds = [0, 255 * 1 / 4 - 20, 255 * 2 / 4 - 20, 255 * 3 / 4 - 20, 255];
@@ -128,8 +111,7 @@
 				let centerX = offsetX + dotHeightWithPadding / 2;
 				let centerY = i * dotHeightWithPadding + dotRadius;
 				let dotColor = video.get(centerX, centerY);
-				let dotColorFixed = convertColor2(dotColor);
-				//console.log(dotColor);
+				let dotColorFixed = convertColor(dotColor);
 				noStroke();
 				fill(dotColorFixed);
 				ellipse(centerX, centerY, dotDiameter, dotDiameter);
